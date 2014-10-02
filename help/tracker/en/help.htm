@@ -13,7 +13,45 @@
 <body>
 <h1>Photoxor Tracker </h1>
 
-<h2>Introduction</h2>
+<div class="toc">
+<ul>
+  <li><a href="#L4277">Introduction</a></li>
+  <li><a href="#L4316">Startup Screen</a>
+    <ul>
+      <li><a href="#L4323">Icon Arrangement</a></li>
+    </ul>
+  </li>
+  <li><a href="#L4334">Tracking</a>
+    <ul>
+      <li><a href="#L4342">TRACKING Screen</a>
+        <ul>
+          <li><a href="#L4396">Audio Recording</a></li>
+          <li><a href="#L4401">Finish Logging</a></li>
+        </ul>
+      </li>
+      <li><a href="#L4432">MAP Screen</a></li>
+      <li><a href="#L4469">PLACES Screen</a></li>
+    </ul>
+  </li>
+  <li><a href="#L4492">Settings</a>
+    <ul>
+      <li><a href="#L4494">General Settings</a>
+        <ul>
+          <li><a href="#L4499">Settings - Share</a></li>
+          <li><a href="#L4504">Settings - Purchases</a></li>
+          <li><a href="#L4522">Settings - Rewards</a></li>
+          <li><a href="#L4537">Settings - Screen</a></li>
+          <li><a href="#L4547">Settings - Google Analytics</a></li>
+        </ul>
+      </li>
+      <li><a href="#L4549">Tracking Settings</a></li>
+      <li><a href="#L4580">Map Settings</a></li>
+    </ul>
+  </li>
+</ul>
+</div>
+
+<h2 id="L4277">Introduction</h2>
 
 <p>With <b>Photoxor Tracker</b> you are able to track and record you path,
 visualize the track together with your favourite locations on a map, and
@@ -27,7 +65,7 @@ your current location.</p>
 </p>
 <ul>
   <li><b>GPS</b> for the most accurate tracking, but depending on your device
-    mayconsume more power</li>
+    may consume more power</li>
   <li><b>Network cell</b> information uses less power, but provides only
     approximate location<b></b></li>
   <li><b>Passive</b> uses no additional power, but receives location
@@ -46,14 +84,17 @@ Photoxor C1; it provides tracking and additionally photography calculations.</p>
 
 <p>Get it for free from Google Play: <a
 href="">http://play.google.com/store/apps/details?id=com.photoxor.fotoapp</a></p>
-<a id="startScreen"></a>
 
-<h2>Startup Screen</h2>
+<h2 id="L4316">Startup Screen</h2>
+
+<p>The Startup Screen provides the visual entry point into the application.
+Icons give you a one-click access to most of the application features. Colour
+coding is used to present functionality grouping.</p>
 
 <p><img alt="Startup Screen" src="../images/Screenshot_Startup_p.png"
 width="295" height="498" /></p>
 
-<h3>Icon Arrangement</h3>
+<h3 id="L4323">Icon Arrangement</h3>
 
 <p>The startup screen presents a number of icons as shortcuts for access to
 functionality of the application. The default arrangement might not be the best
@@ -69,16 +110,19 @@ src="../images/Screenshot_Startup_rearrange_icons_p.png" width="295"
 height="504" /></p>
 
 <p>Please repeat this process for other icons you want to rearrange. Different
-arrangement can be performed for portrait and landscape screen views.</p>
+arrangements can be performed for portrait and landscape screen views.</p>
 
 <p>New versions of the application may introduce new icons. They are placed
 onto one of the free positions, and you are able to then rearrange these new
 icons.</p>
 
-<h2>Tracking</h2>
-<a id="tracking"></a>
+<h2 id="L4334">Tracking</h2>
+<a id="tracking"></a> Use GPS tracking to log your movement path to a file or
+display on a map. 
 
-<h3>TRACKING Screen</h3>
+<p>Three tabs are available: TRACKING, MAP, PLACES</p>
+
+<h3 id="L4342">TRACKING Screen</h3>
 
 <p>From the Startup screen press the Tracking icon to reach the tracking
 functionality.</p>
@@ -118,17 +162,51 @@ width="295" height="503" /></p>
 camera) can be associated with the current location. You might use this feature
 to quickly record information about a place.</p>
 
-<a id="audioRecording"></a><h4>Audio Recording</h4>
+<h4 id="L4396">Audio Recording</h4>
 
 <p><img alt="Tracking - Audio Recording"
 src="../images/Screenshot_Tracking_Audio_recording_p.png" width="295"
 height="505" /></p>
-<a id="map"></a>
 
-<h3>MAP Screen</h3>
+<h4 id="L4401">Finish Logging</h4>
+
+<p><a id="audioRecording" name="audioRecording"></a>When you finish logging a
+dialog appears to select what action to take. Use Cancel in case you pressed
+the Stop Logging button in error.</p>
+
+<p><img alt="Tracking Stop Logging Screen"
+src="../images/Screenshot_Tracking_Stop_Logging_Share.png" width="295"
+height="175" /></p>
+
+<p>You can share the log file, for example upload to cloud storage, send via
+email, ...</p>
+
+<p>Depending on your settings (see Settings) the log file together with audio
+recordings and photos will be packaged as a ZIP file.</p>
+
+<p>Please note that in case no recorrds (for example no GPX fix could be
+obtained yet) are logged when you stop, no data from that session are available
+for sharing. Therefore in such situation pressing Share brings up a file
+dialog. You can then either select an old recording for sharing or abort.</p>
+
+<p>The folloing log file formats are supported:</p>
+<dl>
+  <dt>GPX</dt>
+    <dd>The GPX file format records the path with timestamp, location
+      coordinates, speed, course, elevation.</dd>
+    <dd>This format is suitable for input into tools such as Adobe
+    Lightroom.</dd>
+  <dt>KML</dt>
+    <dd>The KML file format records the path with timestamp and
+      locationcoordinates.</dd>
+</dl>
+
+<h3 id="L4432">MAP Screen</h3>
 
 <p>The MAP screen is based on Google Maps. It allows you to display the
 recorded path, a previously logged path, or mark places (see PLACES screen).</p>
+
+<p>To show the map, Internet connectivity is required.</p>
 
 <p><img alt="Tracking - Map Screen (Path)"
 src="../images/Screenshot_Map_path_p.png" width="295" height="502" /></p>
@@ -145,9 +223,9 @@ logged path on the map.</p>
 existing log file and present the path on the map.</p>
 
 <p>Use the <strong><em>None</em> button</strong> to clear markers and path.</p>
-<a id="places"></a>
+<a id="places"></a> 
 
-<h3>PLACES Screen</h3>
+<h3 id="L4469">PLACES Screen</h3>
 
 <p>The PLACES screen is used to load places (<strong><em>Load KML</em>
 button</strong>) of interest from KML files.</p>
@@ -164,11 +242,177 @@ from current location (if current location is available).</p>
 places in the list onto the map (does not automatically move to MAP screen!).
 You can do this for multiple places lists.</p>
 
-<h2>Settings</h2>
+<h2 id="L4492">Settings</h2>
 
-<h3>General Settings</h3>
+<h3 id="L4494">General Settings</h3>
 
-<h3>Map Settings</h3>
+<p>Settings allow specific configuration of your application installation and
+enables the extension with additional functionality (either by in-app purchase
+or the integrated rewards system).</p>
+
+<p><img alt="Settings Screen" src="../images/Screenshot_Settings_p.png"
+width="295" height="502" /></p>
+
+<h4 id="L4499">Settings - Share</h4>
+
+<p>This function allows you to share a link to this application with your
+friends. Depending on what applications are installed on your device, you can
+for example use email, Facebook, instant messaging, cloud storage.</p>
+
+<p>The shared link opens Google Play to download and install the
+application.</p>
+
+<p><img alt="Settings share" src="../images/Screenshot_Settings_Share_p.png"
+width="295" height="504" /></p>
+
+<h4 id="L4504">Settings - Purchases</h4>
+
+<p>This function allows you to purchase additional functionality using Google
+in-app payment.</p>
+
+<p>A list of purchasable features is presented:</p>
+
+<p><img alt="Settings Purchases"
+src="../images/Screenshot_Settings_Purchases_p.png" width="295" height="502"
+/></p>
+
+<p></p>
+
+<p>Following a more detailed description of the feature and the purchase price
+is shown:</p>
+
+<p><img alt="Settings Purchases Details"
+src="../images/Screenshot_Settings_Purchases_Detail_p.png" width="295"
+height="503" /></p>
+<a id="rewardList">On this screen you can abort the purchase using
+<em>Cancel</em>.</a>
+
+<p>Before purchase you may want to trial the feature. Use the <em>TryMe</em>
+button and the functionality will be enabled for a limited time (usually 15
+minutes). The trial can be performed up to 3 times. Please note that the trial
+ends either on expiry of the trial time or exit from the application.</p>
+
+<p>Use the <em>Purchase</em> button to buy the feature. You will be redirected
+to Google Play to perform payment.</p>
+
+<h4 id="L4522">Settings - Rewards</h4>
+
+<p>Reward points can be earned by completing surveys and viewing other
+advertisement content.</p>
+
+<p>After earning some points you can use them to activate otherwise chargable
+functionality for a limited time.</p>
+
+<p><img alt="Settings Rewards"
+src="../images/Screenshot_Settings_Rewards_p.png" width="295" height="502"
+/></p>
+
+<p></p>
+
+<p>The <em>Earn Points</em> screen lists surveys and advertisement. Click the
+button and complete the flow to earn the shown number of points. As soon as
+you've earned points the total points held in your <em>Wallet</em> will be
+updated.</p>
+
+<p>Please note that some of the content may not be available, and the button
+remains inactive. As soon as content becomes available the associated button
+will become active.</p>
+
+<p><img alt="Settings Rewards Earn"
+src="../images/Screenshot_Settings_Rewards_Earn_p.png" width="295" height="503"
+/></p>
+
+<p></p>
+
+<p>Once you have earned some points redeem them by subscribing to one or more
+additional application functionality. On selection one of the application
+features available to the rewards system, a Reward Detail screen is shown. This
+screen provides you with a feature description and the current subscription
+status for this feature, as well as the number of points required for a 24
+hours activiation.</p>
+
+<p>The <em>Cancel</em> button can be used to move back to the list screen
+without making any changes.</p>
+
+<p>Use the <em>Subscribe</em> button to subscribe to the application feature.
+Once subscribed, the feature will be activated as soon as sufficient points are
+in your Wallet. As long as you maintain sufficient points in your Wallet the
+application feature will be reactivated on expiry of the 24 hours activiation,
+and the number of points will be deducted accordingly.</p>
+
+<p>You may unsubscribe from the application feature at any time using the
+<em>Stop</em> button. The subscription will be ended, and access to the feature
+remains active until expiry of the activation period. You may subscribe to the
+feature again when needed.</p>
+
+<p><img alt="Settings Rewards Details"
+src="../images/Screenshot_Settings_Rewards_Details_p.png" width="295"
+height="502" /></p>
+
+<h4 id="L4537">Settings - Screen</h4>
+
+<p>This screen provides you with configuration of the application screens.</p>
+
+<p><img alt="Settings Screen" src="../images/Screenshot_Settings_Screen_p.png"
+width="295" height="198" /></p>
+
+<p></p>
+
+<p>You are able to customise the screen background and select either the
+default background or change to a custom color using the color picker. It is
+recommeded to use a light color to retain good visibility of the application
+screen information.</p>
+
+<p><img alt="Settings Screen Color"
+src="../images/Screenshot_Settings_Screen_Color_p.png" width="295" height="503"
+/></p>
+
+<h4 id="L4547">Settings - Google Analytics</h4>
+
+<p>This application collects some usage patterns using Google Analytics. This
+information is used to identify the general usage pattern of the application,
+which helps use to continue improvements of features. No personal information
+is used; all information is aggregated across the whole user community.</p>
+
+<p>With this option you are able to opt-out from this feature.</p>
+
+<h3 id="L4549">Tracking Settings</h3>
+
+<p>For Map settings please see below.</p>
+
+<p><img alt="Settings Tracking Screen"
+src="../images/Screenshot_Settings_Tracking_p.png" width="295" height="691"
+/></p>
+
+<p></p>
+
+<p>You are able to choose your preferred location provider from GPS, Network
+Tower or Passive.</p>
+
+<p><img alt="Settings Location Provider"
+src="../images/Screenshot_Settings_Location_Provider_p.png" width="295"
+height="503" /></p>
+
+<p>Select your preferred location provider:</p>
+<dl>
+  <dt>GPS</dt>
+    <dd>The most accurate tracking, but depending on your device may consume
+      more power.</dd>
+  <dt>Network Tower</dt>
+    <dd>This type of location provider uses less power, but provides only
+      approximate location information.</dd>
+  <dt>Passive</dt>
+    <dd>No additional power is consumed, but receives location information only
+      when another application on your device requests it; good for background
+      tracking. </dd>
+</dl>
+
+<h3 id="L4580">Map Settings</h3>
+
+<p>Customise the presentation of your map and how information is shown.</p>
+
+<p><img alt="Settings Map screen" src="../images/Screenshot_Settings_Map_p.png"
+width="295" height="502" /></p>
 
 <p></p>
 </body>
