@@ -73,7 +73,7 @@ your current location.</p>
     for background tracking. </li>
 </ul>
 
-<p>A number of in-app purchases are now available to further extend
+<p>A number of in-app purchases are available to further extend
 capabilities.</p>
 
 <p>Please note that the accuracy of tracking is dependent on the GPS
@@ -88,7 +88,7 @@ href="">http://play.google.com/store/apps/details?id=com.photoxor.fotoapp</a></p
 <h2 id="L4316">Startup Screen</h2>
 
 <p>The Startup Screen provides the visual entry point into the application.
-Icons give you a one-click access to most of the application features. Colour
+Icons give you a one-click access to most of the application features. Color
 coding is used to present functionality grouping.</p>
 
 <p><img alt="Startup Screen" src="../images/Screenshot_Startup_p.png"
@@ -99,11 +99,12 @@ width="295" height="498" /></p>
 <p>The startup screen presents a number of icons as shortcuts for access to
 functionality of the application. The default arrangement might not be the best
 for your particular usage, and therefore prefer to rearrange icons. To do this,
-press and hold on the icon you want to move. On this 'long press' an array of
-square shows up (see image) and you are now able to drag the chosen icon to one
-of the squares. As soon as you end the drag, the icon will be placed on the
-target square, and the array of squares dissapears. In case you drag to a
-square already holding an icon, this icon will be moved away.</p>
+<strong>press and hold on the icon</strong> you want to move. On this 'long
+press' an array of squares shows up (see image) and you are now able to drag
+the chosen icon to one of the squares. As soon as you end the drag, the icon
+will be placed on the target square, and the array of squares dissapears. In
+case you drag to a square already holding an icon, this icon will be moved
+away.</p>
 
 <p><img alt="Rearrange icons"
 src="../images/Screenshot_Startup_rearrange_icons_p.png" width="295"
@@ -120,7 +121,7 @@ icons.</p>
 <a id="tracking"></a> Use GPS tracking to log your movement path to a file or
 display on a map. 
 
-<p>Three tabs are available: TRACKING, MAP, PLACES</p>
+<p>Three screens (tabs) are available: TRACKING, MAP, PLACES</p>
 
 <h3 id="L4342">TRACKING Screen</h3>
 
@@ -139,7 +140,7 @@ height="86" /></p>
       and updated when available.</dd>
     <dd>For GPS coordinates - depending on your device - it may take some time
       until the first fix is locked. In some instances, in particular within
-      buildings you might not get a GPS fix at all.</dd>
+      buildings you might not receive a GPS fix at all.</dd>
     <dd>The location provider can be changed in <em>Settings</em>, also while
       <em>Logging</em> is active.</dd>
   <dt>Logging</dt>
@@ -147,22 +148,32 @@ height="86" /></p>
       file where both GPX and KML formats are supported, or shown on the MAP
       screen only.</dd>
     <dd>When you switch on <em>Logging</em>, the <em>Tracking</em>
-      functionality is automatically enabled as well. But you are able to
-      switch off <em>Tracking</em> while <em>Logging</em> continues to be
-      active. This can be used to save energy for example while inside a
-      building or stationary at a location for some time.</dd>
+      functionality is automatically enabled as well. You are able to switch
+      off <em>Tracking</em> while <em>Logging</em> continues to be active. This
+      can be used to save energy for example while inside a building or
+      stationary at a location for some time.</dd>
 </dl>
+
+<p><img alt="Tracking screen" src="../images/Screenshot_Tracking_en_p.png"
+width="295" height="504" /></p>
 
 <p></p>
 
-<p><img alt="Tracking Screen" src="../images/Screenshot_Tracking_p.png"
-width="295" height="503" /></p>
-
 <p>While Logging is active both audio recordings and photos (taken with device
 camera) can be associated with the current location. You might use this feature
-to quickly record information about a place.</p>
+to quickly record information about a place. For such recordings a marker is
+shown on the map.</p>
 
 <h4 id="L4396">Audio Recording</h4>
+
+<p>Wile Logging is active you are able to record an audio message. This
+recording is geocoded with the current location. In case the track is presented
+on the map (MAP screen) then a marker icon in shape of a microphone is
+shown.</p>
+
+<p>Within Settings you can change the recording format between 3GP, MPEG4, AMR.
+The recording file is stored in a folder for media files associated with the
+track. The name is shown during the audio recording dialog.</p>
 
 <p><img alt="Tracking - Audio Recording"
 src="../images/Screenshot_Tracking_Audio_recording_p.png" width="295"
@@ -171,20 +182,20 @@ height="505" /></p>
 <h4 id="L4401">Finish Logging</h4>
 
 <p><a id="audioRecording" name="audioRecording"></a>When you finish logging a
-dialog appears to select what action to take. Use Cancel in case you pressed
-the Stop Logging button in error.</p>
+dialog appears to select what action to take. Use <em>Cancel</em> in case you
+switched off logging in error.</p>
 
 <p><img alt="Tracking Stop Logging Screen"
 src="../images/Screenshot_Tracking_Stop_Logging_Share.png" width="295"
 height="175" /></p>
 
-<p>You can share the log file, for example upload to cloud storage, send via
-email, ...</p>
+<p>You can <strong>share</strong> the log file, for example upload to cloud
+storage, send via email, ...</p>
 
 <p>Depending on your settings (see Settings) the log file together with audio
 recordings and photos will be packaged as a ZIP file.</p>
 
-<p>Please note that in case no recorrds (for example no GPX fix could be
+<p>Please note that in case no records (for example no GPS fix could be
 obtained yet) are logged when you stop, no data from that session are available
 for sharing. Therefore in such situation pressing Share brings up a file
 dialog. You can then either select an old recording for sharing or abort.</p>
@@ -197,8 +208,8 @@ dialog. You can then either select an old recording for sharing or abort.</p>
     <dd>This format is suitable for input into tools such as Adobe
     Lightroom.</dd>
   <dt>KML</dt>
-    <dd>The KML file format records the path with timestamp and
-      locationcoordinates.</dd>
+    <dd>The KML file format records the path with timestamp and location
+      coordinates.</dd>
 </dl>
 
 <h3 id="L4432">MAP Screen</h3>
@@ -206,7 +217,8 @@ dialog. You can then either select an old recording for sharing or abort.</p>
 <p>The MAP screen is based on Google Maps. It allows you to display the
 recorded path, a previously logged path, or mark places (see PLACES screen).</p>
 
-<p>To show the map, Internet connectivity is required.</p>
+<p>To show the map, Internet connectivity is required. You may use Google Map
+to persist a map area for offline access.</p>
 
 <p><img alt="Tracking - Map Screen (Path)"
 src="../images/Screenshot_Map_path_p.png" width="295" height="502" /></p>
@@ -216,19 +228,21 @@ src="../images/Screenshot_Map_path_p.png" width="295" height="502" /></p>
 <p><img alt="Tracking - Map Screen (Places)"
 src="../images/Screenshot_Map_p.png" width="295" height="503" /></p>
 
-<p>The <strong><em>Logger</em> button</strong> is used to present the currently
-logged path on the map.</p>
+<p>The <strong><em>Logger</em> </strong>button<strong></strong> is used to
+present the currently logged path on the map. Special markers are shown for
+audio recordings and photos taken.</p>
 
-<p>The <strong><em>Load Log File</em> button</strong> allows to load an
-existing log file and present the path on the map.</p>
+<p>The <strong><em>Load Log File</em> </strong>button<strong></strong> allows
+to load an existing log file and present the path on the map.</p>
 
-<p>Use the <strong><em>None</em> button</strong> to clear markers and path.</p>
+<p>Use the <strong><em>None</em> </strong>button<strong></strong> to clear all
+markers and path.</p>
 <a id="places"></a> 
 
 <h3 id="L4469">PLACES Screen</h3>
 
 <p>The PLACES screen is used to load places (<strong><em>Load KML</em>
-button</strong>) of interest from KML files.</p>
+</strong>button<strong></strong>) of interest from KML files.</p>
 
 <p><img alt="Tracking - Places Screen" src="../images/Screenshot_Places_p.png"
 width="295" height="505" /></p>
@@ -236,19 +250,20 @@ width="295" height="505" /></p>
 <p>The list of loaded places can be sorted either alphabetically or by distance
 from current location (if current location is available).</p>
 
-<p>Click on one place and the MAP screen is shown positioned on this place.</p>
+<p>Click on one place and the MAP screen is shown, positioned for this
+place.</p>
 
-<p>Use the <strong><em>On Map</em> button</strong> to put markers for all
-places in the list onto the map (does not automatically move to MAP screen!).
-You can do this for multiple places lists.</p>
+<p>Use the <strong><em>On Map</em> </strong>button<strong></strong> to put
+markers for all places in the list onto the map (does not automatically move to
+MAP screen!). You can do this for multiple places lists.</p>
 
 <h2 id="L4492">Settings</h2>
 
 <h3 id="L4494">General Settings</h3>
 
 <p>Settings allow specific configuration of your application installation and
-enables the extension with additional functionality (either by in-app purchase
-or the integrated rewards system).</p>
+allows to enable functionality extension (either by in-app purchase or the
+integrated rewards system).</p>
 
 <p><img alt="Settings Screen" src="../images/Screenshot_Settings_p.png"
 width="295" height="502" /></p>
@@ -303,15 +318,16 @@ purchase price is shown:</p>
 src="../images/Screenshot_Settings_Purchases_Detail_p.png" width="295"
 height="503" /></p>
 <a id="rewardList">On this screen you can abort the purchase using
-<em>Cancel</em>.</a> 
+<strong>Cancel</strong>.</a> 
 
-<p>Before purchase you may want to trial the feature. Use the <em>TryMe</em>
-button and the functionality will be enabled for a limited time (usually 15
-minutes). The trial can be performed up to 3 times. Please note that the trial
-ends either on expiry of the trial time or exit from the application.</p>
+<p>Before purchasing you may want to trial the feature. Use the
+<strong>TryMe</strong> button and the functionality will be enabled for a
+limited time (usually 15 minutes). The trial can be performed up to 3 times.
+Please note that the trial ends either on expiry of the trial time or exit from
+the application.</p>
 
-<p>Use the <em>Purchase</em> button to buy the feature. You will be redirected
-to Google Play where you are able to perform payment.</p>
+<p>Use the <strong>Purchase</strong> button to buy the feature. You will be
+redirected to Google Play where you are able to perform payment.</p>
 
 <h4 id="L4522">Settings - Rewards</h4>
 
@@ -327,10 +343,10 @@ src="../images/Screenshot_Settings_Rewards_p.png" width="295" height="502"
 
 <p></p>
 
-<p>The <em>Earn Points</em> screen lists surveys and advertisement. Click the
-button and complete the flow to earn the shown number of points. As soon as
-you've earned points the total points held in your <em>Wallet</em> will be
-updated.</p>
+<p>The <em>Earn Points</em> screen lists surveys and advertisement. Click on
+one of the active buttons and complete the flow to earn the shown number of
+points. As soon as you've earned points the total points held in your
+<em>wallet</em> will be updated.</p>
 
 <p>Please note that some of the content may not be available, and the button
 remains inactive. As soon as content becomes available the associated button
@@ -342,26 +358,26 @@ src="../images/Screenshot_Settings_Rewards_Earn_p.png" width="295" height="503"
 
 <p></p>
 
-<p>Once you have earned some points redeem them by subscribing to one or more
-additional application functionality. On selection one of the application
+<p>Once you have earned some points, redeem them by subscribing to one or more
+additional application functionality. On selection of one of the application
 features available to the rewards system, a Reward Detail screen is shown. This
-screen provides you with a feature description and the current subscription
+screen provides you with a feature description and your current subscription
 status for this feature, as well as the number of points required for a 24
 hours activiation.</p>
 
-<p>The <em>Cancel</em> button can be used to move back to the list screen
-without making any changes.</p>
+<p>The <strong>Cancel</strong> button can be used to move back to the list
+screen without making any changes.</p>
 
-<p>Use the <em>Subscribe</em> button to subscribe to the application feature.
-Once subscribed, the feature will be activated as soon as sufficient points are
-in your Wallet. As long as you maintain sufficient points in your Wallet the
-application feature will be reactivated on expiry of the 24 hours activiation,
-and the number of points will be deducted accordingly.</p>
+<p>Use the <strong>Subscribe</strong> button to subscribe to the application
+feature. Once subscribed, the feature will be activated as soon as sufficient
+points are in your Wallet. As long as you maintain sufficient points in your
+Wallet the application feature will be reactivated on expiry of the 24 hours
+activiation, and the number of points will be deducted accordingly.</p>
 
 <p>You may unsubscribe from the application feature at any time using the
-<em>Stop</em> button. The subscription will be ended, and access to the feature
-remains active until expiry of the activation period. You may subscribe to the
-feature again when needed.</p>
+<strong>Stop</strong> button. The subscription will be ended, and access to the
+feature remains active until expiry of the activation period. You may subscribe
+to the feature again when needed.</p>
 
 <p><img alt="Settings Rewards Details"
 src="../images/Screenshot_Settings_Rewards_Details_p.png" width="295"
@@ -387,7 +403,7 @@ src="../images/Screenshot_Settings_Screen_Color_p.png" width="295" height="503"
 
 <h4 id="L4547">Settings - Google Analytics</h4>
 
-<p>This application collects some usage patterns using Google Analytics. This
+<p>This application collects some usage patterns through Google Analytics. The
 information is used to identify the general usage pattern of the application,
 which helps use to continue improvements of features. No personal information
 is used; all information is aggregated across the whole user community.</p>
