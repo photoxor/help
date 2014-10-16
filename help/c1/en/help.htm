@@ -5,74 +5,821 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
   <title>Help</title>
+  <style type="text/css">
+  </style>
+  <link href="../../style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-<p><strong>The ideal photography tool when travelling!</strong></p>
+<h1>Photoxor C1</h1>
+
+<div class="toc">
+<ul>
+  <li><a href="#L4277">Introduction</a></li>
+  <li><a href="#L4316">Startup Screen</a>
+    <ul>
+      <li><a href="#L4323">Icon Arrangement</a></li>
+    </ul>
+  </li>
+  <li><a href="#L576">Photography Calculations</a>
+    <ul>
+      <li><a href="#L581">Exposure (EV)</a>
+        <ul>
+          <li><a href="#L205">EV from Camera Settings</a></li>
+          <li><a href="#L851">Exposure Value (EV)</a></li>
+          <li><a href="#L864">Locks</a></li>
+          <li><a href="#L222">Lightmeter</a></li>
+        </ul>
+      </li>
+      <li><a href="#L586">Filter Stack (FILTER)</a>
+        <ul>
+          <li><a href="#L1067">Camera Settings without Filter</a></li>
+          <li><a href="#L1076">Filter Stack</a></li>
+          <li><a href="#L1081">Then Set Camera To</a></li>
+        </ul>
+      </li>
+      <li><a href="#L591">Depth of Field (DOF)</a></li>
+      <li><a href="#L257">Depth of Field - Near / Far (DOF NEAR/FAR)</a></li>
+      <li><a href="#L596">CoC</a></li>
+      <li><a href="#L608">Field of View (FOV)</a></li>
+    </ul>
+  </li>
+  <li><a href="#L4334">Tracking</a>
+    <ul>
+      <li><a href="#L4342">TRACKING Screen</a>
+        <ul>
+          <li><a href="#L4396">Audio Recording</a></li>
+          <li><a href="#L4401">Finish Logging</a></li>
+        </ul>
+      </li>
+      <li><a href="#L4432">MAP Screen</a></li>
+      <li><a href="#L4469">PLACES Screen</a></li>
+    </ul>
+  </li>
+  <li><a href="#L4492">Settings</a>
+    <ul>
+      <li><a href="#L4494">General Settings</a>
+        <ul>
+          <li><a href="#L3695">Settings - Cameras</a></li>
+          <li><a href="#L3697">Settings - Filters</a></li>
+          <li><a href="#L3699">Settings - Print Definitions</a>
+            <ul>
+              <li><a href="#L13312">Settings - Comfortable viewing
+              angle</a></li>
+              <li><a href="#L13314">Settings - Human eye resolution</a></li>
+            </ul>
+          </li>
+          <li><a href="#L3705">Settings - Configuration</a>
+            <ul>
+              <li><a href="#L3707">Precision</a></li>
+              <li><a href="#L3709">Stop scale</a></li>
+              <li><a href="#L3711">Unit of Measurement</a></li>
+              <li><a href="#L3713">Film / sensor speed ('ISO') type</a></li>
+              <li><a href="#L3715">Wavelength</a></li>
+              <li><a href="#L3717">Screen</a></li>
+            </ul>
+          </li>
+          <li><a href="#L4499">Settings - Share</a></li>
+          <li><a href="#L4504">Settings - Purchases</a></li>
+          <li><a href="#L4522">Settings - Rewards</a></li>
+          <li><a href="#L4547">Settings - Google Analytics</a></li>
+        </ul>
+      </li>
+      <li><a href="#L4549">Tracking Settings</a></li>
+      <li><a href="#L4580">Map Settings</a></li>
+    </ul>
+  </li>
+</ul>
+</div>
+
+<h2 id="L4277">Introduction</h2>
 
 <p>Photoxor C1 is a photography tool for <strong>exposure</strong> and
 <strong>depth of field</strong> calculations, <strong>GPS location
-tracking</strong>. Visualise locations on map, and quickly see what's closest
+tracking</strong>. Visualise locations on a map, and quickly see what's closest
 to you.</p>
 
 <p>Use the device camera based <strong>lightmeter</strong> to estimate an
 Exposure Value (EV) reading, determine camera settings and calculate
-adjustments needed for a (neutral density) filter.</p>
+adjustments needed for a (neutral density) <b>filter stack</b>.</p>
 
 <p>The Depth of Field calculation shows the near and far limits of sharpness,
 and additionally provides a graphical visualisation of the level of sharpness
 and diffraction. The Circle of Confusion (CoC) is automatically calculated from
-the camera sensor size, but may be overridden with a custom value.</p>
+the camera sensor size, but may be overridden with a custom value. A special
+<b>CoC calculation</b> screen allows the selection of camera and print
+specification. It determines the required sensor CoC and print resolution (DPI)
+depending on the anticipated minimum viewing distance.</p>
 
-<p>The Depth of Field calculation now also allows specifying the range of
-sharpness (near and far limits) and calculates the needed camera settings.</p>
+<p>The Depth of Field calculation also allows specifying the range of sharpness
+(near and far limits) and calculates the needed camera settings.</p>
 
 <p><strong>Location tracking</strong> is available to record your path of
 travel. You can also record audio notes to quickly store information on your
 way. For reference you may want to take geotagged photographs with your device
 camera.</p>
 
-<p>The key features are:</p>
+<p>A number of in-app purchases are available to further extend
+capabilities.</p>
+
+<h2 id="L4316">Startup Screen</h2>
+
+<p>The Startup Screen provides the visual entry point into the application.
+Icons give you a one-click access to most of the application features. Color
+coding is used to present functionality grouping.</p>
+
+<p><img alt="Startup Screen" src="../images/Screenshot_Startup_p.png"
+width="295" height="498" /></p>
+
+<h3 id="L4323">Icon Arrangement</h3>
+
+<p>The startup screen presents a number of icons as shortcuts for access to
+functionality of the application. The default arrangement might not be the best
+for your particular usage, and therefore prefer to rearrange icons. To do this,
+<strong>press and hold on the icon</strong> you want to move. On this 'long
+press' an array of squares shows up (see image) and you are now able to drag
+the chosen icon to one of the squares. As soon as you end the drag, the icon
+will be placed on the target square, and the array of squares dissapears. In
+case you drag to a square already holding an icon, this icon will be moved
+away.</p>
+
+<p><img alt="Rearrange icons"
+src="../images/Screenshot_Startup_rearrange_icons_p.png" width="295"
+height="504" /></p>
+
+<p>Please repeat this process for other icons you want to rearrange. Different
+arrangements can be performed for portrait and landscape screen views.</p>
+
+<p>New versions of the application may introduce new icons. They are placed
+onto one of the free positions, and you are able to then rearrange these new
+icons.</p>
+
+<h2 id="L576">Photography Calculations</h2>
+
+<p>A set of screen is available to perform photography calculations, including
+exposure, filter adjustments, depth of field, field of view, circle of
+confusion.</p>
+<a id="EV"></a> 
+
+<h3 id="L581">Exposure (EV)</h3>
+
+<p>This screen enables you to perform exposure calculations in two ways:
+calculate the exposure value from your camera settings, or - in reverse - enter
+an exposure value (use the lightmeter for an indicative value) and determine
+the best camera settings.</p>
+
+<p><img alt="Screenshot Exposure" src="../images/Screenshot_ev_p_en.png"
+width="295" height="499" /></p>
+
+<p></p>
+
+<h4 id="L205">EV from Camera Settings</h4>
+
+<p>Enter your camera settings</p>
 <ul>
-  <li>Aperture, time, ISO<br />
-    Exposure calculations and Exposure Value (EV)</li>
-  <li>Lightmeter (using device camera)</li>
-  <li>ND filters and &ldquo;Black Glass&rdquo;<br />
-    Calculation on how a ND filter light reductions affects exposure
-  settings</li>
-  <li>Depth of Field calculations with graphical presentation of distance
-    dependent sharpness level (CoC)</li>
-  <li>Depth of Field reverse calculation<br />
-    Camera settings are determined based on required near and far sharpness
-    limits </li>
-  <li>Field of View calculation<br />
-    Both dimensional and angular<br />
-    also dimensional reverse calculation </li>
-  <li>Define own cameras and custom Circle of Confusion (CoC)</li>
-  <li>Define own filter characteristics (light reduction)</li>
-  <li>Set your stop system (full, ½, 1/3, ¼ stops)</li>
-  <li>Customize light wavelength for diffraction calculation (Airy Disk)</li>
-  <li>Track your path of travel and visualise on map</li>
-  <li>Save GPS tracking path on GPX or KML files</li>
-  <li>Load location information from KML files and visualise on map</li>
-  <li>Show current distance from your locations of interest</li>
-  <li>Configure screen background</li>
+  <li>aperture (f/x),</li>
+  <li>exposure time in seconds,</li>
+  <li>film speed (ISO).</li>
 </ul>
 
-<p>A number of in-app purchases are now available to further extend
-capabilities:</p>
+<p>The corresponding calculated <strong>exposure value</strong> (EV) is now
+shown below together with a short description and an image to indicate the
+scenario. The luminance value is expressed in candela per square meter
+(cd/m<sup>2</sup>).</p>
+
+<p>To refine the values use the Locks mechanism.</p>
+
+<p>Go to Settings for a change of the Stop system (value increments, for
+example values in full stops only or 1/3 stops).</p>
+
+<h4 id="L851">Exposure Value (EV)</h4>
+
+<p>In preparatation of a photo shoot you might already know the exposure value
+of the scenario. In such case use the slider to enter the exposure value. The
+camera settings will be adjusted accordingly.</p>
+
+<p>Press the lock symbol to prevent the EV from changing its value (please note
+that for some extreme settings the EV changes due to range limits).</p>
+
+<p>To refine the values use the Locks mechanism.</p>
+
+<h4 id="L864">Locks</h4>
+
+<p>Locks are used to prevent a value from changing. A lock can be open <img
+alt="Lock Open" src="../images/ic_lock_open.png" width="48" height="47" />or
+closed<img alt="Lock closed" src="../images/ic_lock_closed.png" width="47"
+height="47" />.</p>
+
+<p>Please note that on this screen only two of the four locks can be in a
+locked state. When you change one of the unlocked values, the other unlocked
+value will be adjusted accordingly.</p>
+
+<h4 id="L222">Lightmeter</h4>
+
+<p>If your device is equiped with a camera, you may use it as a simple
+<strong>light meter</strong>. The light meter takes a picture and sets the EV
+according to the exposure details of the image. The EV will become locked. The
+accuracy of the recorded exposure value (EV) depends on your device.</p>
+
+<p>In case no camera can be accessed the light meter button is deactivated.</p>
+<a id="Filter"></a> 
+
+<h3 id="L586">Filter Stack (FILTER)</h3>
+
+<p>The Filter screen is used to adjust camera settings by the amount of light
+reduction from one or more attached neutral density (ND) filters. This is in
+particular useful for very dark filters, often called 'Black Glass', where
+exposure measurement through the DSLR camera is not possible.</p>
+
+<p>An article with a step by step guide can be found on the <a
+href="http://photoxor.blogspot.com.au/2014/10/how-to-calculate-exposure-for-black.html">Photoxor
+Blog</a>.</p>
+
+<p><img alt="Screenshot Filter Stack"
+src="../images/Screenshot_filter_p_en.png" width="295" height="503" /></p>
+
+<h4 id="L1067">Camera Settings without Filter</h4>
+
+<p>Here you enter the camera settings without the filter(s) attached. You can
+use the Exposure (EV) screen to calculate these settings, and then move to this
+Filter screen. </p>
+
+<h4 id="L1076">Filter Stack</h4>
+
+<p>Now enter the neutral density filters you intend to mount on you camera. The
+free version allows to set one filter only, whereas the 'Filter-Stack' in-app
+purchase supports a stack of multiple filters and also fractional light
+reduction values.</p>
+
+<h4 id="L1081">Then Set Camera To</h4>
+
+<p>Here you find the camera setting reflecting the light reduction once the
+filters are attached. Using these settings gives your image about the same
+exposure level as using the original settings without filter.</p>
+
+<p>In case you find a difference in exposure, either the light situation might
+have changed (for example during sunset), or the filter light reduction values
+are not exactly correct. In case you require more precise values you should
+perform some tests beforehand and adjust the light reduction value within the
+filter definition.</p>
+<a id="Dof"></a> 
+
+<h3 id="L591">Depth of Field (DOF)</h3>
+
+<p>This screen allows to calculate the Depth of Field (DoF) for a given
+scenario.</p>
+
+<p><img alt="Screenshot Depth of Field Standard"
+src="../images/Screenshot_dof_p_en.png" width="295" height="503" /></p>
+
+<p>For this calculation you select your camera, aperture, focal length,
+distance and optionally adjust the Circle of Confusion (CoC) value (for
+advanced scenarios use the CoC calculation screen). The depth of field is then
+shown with near and far distance values. The hyperfocal length is calculated,
+too.</p>
+
+<p>For focal length and also distance you can either use the (logarithmic)
+sliders to quickly set approximate values or use the entry fields for a precise
+value. Distance values can be shown and entered either in meter or feet.</p>
+
+<p>The Circle of Confusion (CoC) is determined from the camera details based on
+the <a href="http://en.wikipedia.org/wiki/Zeiss_formula">Zeiss formula</a>, but
+you may select your own value.</p>
+
+<p>Please note that near, far and hyperfocal distances are currently calculated
+based on the set CoC value without consideration of diffraction.</p>
+
+<p>The graph presents three CoC lines depending on the distance:</p>
 <ul>
-  <li><strong>Advertisement free:</strong> Get more screen space by removing
-    the advertisement banner.</li>
-  <li><strong>High Precision:</strong> An essential feature for the serious
-    photographer!<br />
-    Get your calculation outputs (depth of field, field of view) in high
-    precision - configure between 2 and 8 significant digits results. </li>
-  <li><strong>Filter Stack:</strong> Define multiple stacked (neutral density)
-    filters and calculate the resulting effect.</li>
-  <li><strong>Tracking Pro:</strong> Get unlimited tracking capability. The
-    time limit for audio recordings is removed, and there is also no limit to a
-    logging session.</li>
+  <li>the calculated CoC value for the distance (yellow line),</li>
+  <li>the CoC plus diffraction (dotted red line),</li>
+  <li>the reference CoC (black dotted line) as the (sometimes a bit arbitrary)
+    boundary between 'sharp' and 'blur'.</li>
 </ul>
+
+<p>The distance where the CoC value is below the reference value is considered
+as 'sharp'; lower CoC values indicate higher sharpness.</p>
+
+<p>Use this graph to quickly visualise changes to the sharpness range.</p>
+
+<p>Press on the graph area to show or hide the legend.</p>
+
+<p>In case you need to define a new camera characteristics or amend, press the
+settings button<img alt="Settings" src="../images/ic_action_settings.png"
+width="48" height="48" /> next to the camera. Also go to Settings for a change
+of the aperture value increment (for example full stops only or 1/3 stops).</p>
+<a id="DofRange"></a> 
+
+<h3 id="L257">Depth of Field - Near / Far (DOF NEAR/FAR)</h3>
+
+<p>This Depth of Field calculation is often also called 'reverse DoF
+calculation'. It allows you to specify a distance range where you require
+sharpness, and calculates camera settings.</p>
+
+<p><img alt="Screenshot Depth of Field, Near / Far"
+src="../images/Screenshot_dof_nf_p_en.png" width="295" height="503" /></p>
+
+<p>Please note that such calculation works well for 'realistic' values, but
+might fail for more extreme scenarios.</p>
+
+<p>The graph is the same as for the standard DoF calculation.</p>
+<a id="CocCalc"></a> 
+
+<h3 id="L596">CoC</h3>
+
+<p>The <a href="http://en.wikipedia.org/wiki/Circle_of_confusion">CoC</a> value
+used for Depth of Field calculations is traditionally based on the <a
+href="http://en.wikipedia.org/wiki/Zeiss_formula">Zeiss formula</a>, which uses
+a print size of 30cm x 20cm viewed from 25cm distance (the comfortable viewing
+distance for the human eye). For general calculations this CoC value is often
+satisfactory.</p>
+
+<p>To produce high-quality prints a more refined CoC value is required. This
+calculation screen removes guessing, and allows to perform non-standard CoC
+calculations based on a camera sensor and print specification. It determines
+the required sensor CoC and print resolution (<a
+href="http://en.wikipedia.org/wiki/Dots_per_inch">DPI</a>) depending on the
+anticipated minimum viewing distance. And it helps you to also understand the
+scenario where the print resolution is a given factor.</p>
+
+<p><img alt="Screenshop CoC Calculation"
+src="../images/Screenshot_CoC_Calc_p_en.png" width="295" height="561" /></p>
+
+<p>To calculate a CoC value specific to your requirements first select your
+camera. Important is the correct sensor size. Use the <img alt="Settings"
+src="../images/ic_action_settings.png" width="48" height="48" /> icon next to
+the camera selection if you would like to create a new camera setting or amend
+an existing one.</p>
+
+<p>Next you need to decide on the print size of the planned image. Here as
+well, use the <img alt="Settings" src="../images/ic_action_settings.png"
+width="48" height="48" /> icon next to the print selection if you would like to
+create a new print definition or amend an existing one. Most important is the
+size of the print.</p>
+
+<p>Usually the calculation is based on the width, but you may alternatively use
+height or diagonal. Depending on you preference, choose your unit of
+measurement.</p>
+
+<p>The application now calculates the 'comfortable' viewing distance for a
+human eye. This is based on the viewing angle. If you have purchased the
+high-precision extension, you are able to amend the angle (standard is 60
+degree).</p>
+
+<p>It also calculates the minimum required print resolution in Dots per Inch
+(DPI), and the required sensor CoC. This calculation is also based on the human
+eye resolution. The standard value is 5 lp/mm. If you have purchased the
+high-precision extension, you are able to amend this value.</p>
+
+<p>The next section allows you to define a <strong>minimum viewing
+distance</strong>. The viewer of your print might first observe at the
+'comfortable' viewing distance, but then get closer to inspect details. If you
+use the CoC standard calculation the sharpness then might not be satisfactory
+any more. Enter the anticipated minimum viewing distance and get the required
+print resolution (DPI) and CoC.</p>
+
+<p>The following section is based on the <strong>print resolution</strong>. For
+a given print resolution you are able to determine what would be minimum
+acceptable viewing distance and the matching CoC.</p>
+<a id="Fov"></a> 
+
+<h3 id="L608">Field of View (FOV)</h3>
+
+<p>How far do you need to stand back to capture a large building? Here the
+Field of View calculation screen is used.</p>
+
+<p><img alt="Screenshot Field of View" src="../images/Screenshot_fov_p_en.png"
+width="295" height="504" /></p>
+
+<p>Select the type of camera used and the focal length of the lens; this
+determines the angle of view, which is shown for both width and height. Now
+increase or decrease the distance until you get a Height value larger than the
+building height.</p>
+
+<p>In reverse, if you have got a zoom lense, enter your distance from the
+object and change the focal length until the Height value larger than the
+building height.</p>
+
+<p>The Field of View screen supports both dimensional and angular
+calculation.</p>
+
+<p>As for most of the other calculation screens, the focus distance can be
+either set using the (logarithmic) slider or the entry field. The focal length
+can be set in the same way.</p>
+
+<p>Distance values can be entered and shown either in meter or feet.</p>
+
+<p>In case you need to define a new camera characteristics, press the settings
+button <img alt="Settings" src="../images/ic_action_settings.png" width="48"
+height="48" /> next to the camera and add a new one.</p>
+
+<h2 id="L4334">Tracking</h2>
+Use GPS tracking to log your movement path to a file or display on a map. 
+
+<p>Three screens (tabs) are available: TRACKING, MAP, PLACES</p>
+
+<h3 id="L4342">TRACKING Screen</h3>
+
+<p>From the Startup screen press the Tracking icon to reach the tracking
+functionality.</p>
+
+<p><img alt="Tracking Icon" src="../images/Tracking Icon.png" width="80"
+height="86" /></p>
+
+<p>The tracking screen offers two key functionalities:</p>
+<dl>
+  <dt>Tracking</dt>
+    <dd>A location provider (such as GPS) is used to determine the current
+      location coordinates, and often also other details such as altitude,
+      speed and bearing of movement. This information is shown on the screen
+      and updated when available.</dd>
+    <dd>For GPS coordinates - depending on your device - it may take some time
+      until the first fix is locked. In some instances, in particular within
+      buildings you might not receive a GPS fix at all.</dd>
+    <dd>The location provider can be changed in <em>Settings</em>, also while
+      <em>Logging</em> is active.</dd>
+  <dt>Logging</dt>
+    <dd>The current location information is recorded. It can be stored to a
+      file where both GPX and KML formats are supported, or shown on the MAP
+      screen only.</dd>
+    <dd>When you switch on <em>Logging</em>, the <em>Tracking</em>
+      functionality is automatically enabled as well. You are able to switch
+      off <em>Tracking</em> while <em>Logging</em> continues to be active. This
+      can be used to save energy for example while inside a building or
+      stationary at a location for some time.</dd>
+</dl>
+
+<p><img alt="Tracking screen" src="../images/Screenshot_Tracking_en_p.png"
+width="295" height="504" /></p>
+
+<p></p>
+
+<p>While Logging is active both audio recordings and photos (taken with device
+camera) can be associated with the current location. You might use this feature
+to quickly record information about a place. For such recordings a marker is
+shown on the map.</p>
+
+<h4 id="L4396">Audio Recording</h4>
+
+<p>Wile Logging is active you are able to record an audio message. This
+recording is geocoded with the current location. In case the track is presented
+on the map (MAP screen) then a marker icon in shape of a microphone is
+shown.</p>
+
+<p>Within Settings you can change the recording format between 3GP, MPEG4, AMR.
+The recording file is stored in a folder for media files associated with the
+track. The name is shown during the audio recording dialog.</p>
+
+<p><img alt="Tracking - Audio Recording"
+src="../images/Screenshot_Tracking_Audio_recording_p.png" width="295"
+height="505" /></p>
+
+<h4 id="L4401">Finish Logging</h4>
+
+<p><a id="audioRecording" name="audioRecording"></a>When you finish logging a
+dialog appears to select what action to take. Use <em>Cancel</em> in case you
+switched off logging in error.</p>
+
+<p><img alt="Tracking Stop Logging Screen"
+src="../images/Screenshot_Tracking_Stop_Logging_Share.png" width="295"
+height="175" /></p>
+
+<p>You can <strong>share</strong> the log file, for example upload to cloud
+storage, send via email, ...</p>
+
+<p>Depending on your settings (see Settings) the log file together with audio
+recordings and photos will be packaged as a ZIP file.</p>
+
+<p>Please note that in case no records (for example no GPS fix could be
+obtained yet) are logged when you stop, no data from that session are available
+for sharing. Therefore in such situation pressing Share brings up a file
+dialog. You can then either select an old recording for sharing or abort.</p>
+
+<p>The folloing log file formats are supported:</p>
+<dl>
+  <dt>GPX</dt>
+    <dd>The GPX file format records the path with timestamp, location
+      coordinates, speed, course, elevation.</dd>
+    <dd>This format is suitable for input into tools such as Adobe
+    Lightroom.</dd>
+  <dt>KML</dt>
+    <dd>The KML file format records the path with timestamp and location
+      coordinates.</dd>
+</dl>
+
+<h3 id="L4432">MAP Screen</h3>
+
+<p>The MAP screen is based on Google Maps. It allows you to display the
+recorded path, a previously logged path, or mark places (see PLACES screen).</p>
+
+<p>To show the map, Internet connectivity is required. You may use Google Map
+to persist a map area for offline access.</p>
+
+<p><img alt="Tracking - Map Screen (Path)"
+src="../images/Screenshot_Map_path_p.png" width="295" height="502" /></p>
+
+<p></p>
+
+<p><img alt="Tracking - Map Screen (Places)"
+src="../images/Screenshot_Map_p.png" width="295" height="503" /></p>
+
+<p>The <strong><em>Logger</em> </strong>button<strong></strong> is used to
+present the currently logged path on the map. Special markers are shown for
+audio recordings and photos taken.</p>
+
+<p>The <strong><em>Load Log File</em> </strong>button<strong></strong> allows
+to load an existing log file and present the path on the map.</p>
+
+<p>Use the <strong><em>None</em> </strong>button<strong></strong> to clear all
+markers and path.</p>
+<a id="places"></a> 
+
+<h3 id="L4469">PLACES Screen</h3>
+
+<p>The PLACES screen is used to load places (<strong><em>Load KML</em>
+</strong>button<strong></strong>) of interest from KML files.</p>
+
+<p><img alt="Tracking - Places Screen" src="../images/Screenshot_Places_p.png"
+width="295" height="505" /></p>
+
+<p>The list of loaded places can be sorted either alphabetically or by distance
+from current location (if current location is available).</p>
+
+<p>Click on one place and the MAP screen is shown, positioned for this
+place.</p>
+
+<p>Use the <strong><em>On Map</em> </strong>button<strong></strong> to put
+markers for all places in the list onto the map (does not automatically move to
+MAP screen!). You can do this for multiple places lists.</p>
+
+<h2 id="L4492">Settings</h2>
+
+<h3 id="L4494">General Settings</h3>
+
+<p>Settings allow specific configuration of your application installation and
+allows to enable functionality extension (either by in-app purchase or the
+integrated rewards system).</p>
+
+<p><img alt="Settings Screen" src="../images/Screenshot_Settings_p.png"
+width="295" height="502" /></p>
+<a id="CameraList"><a id="CameraDetails"></a></a> 
+
+<h4 id="L3695">Settings - Cameras</h4>
+<a id="FilterList"></a><a id="FilterDetails">Camera definitions are used to
+determine the circle of confusion (CoC) for Depth of Field (DoF) calculations.
+</a><a id="FilterDetails1" name="FilterDetails1">Please add your own camera
+definitions.</a> 
+
+<p><a id="FilterDetails">Perform a long press on a camera name in the list to
+delete the item.</a></p>
+
+<p><a id="FilterDetails">You can reset this list to default values; please note
+that all own definitions and customisations are permanently lost.</a></p>
+
+<h4 id="L3697">Settings - Filters</h4>
+<a id="PrintDefsList"></a><a id="PrintDefDetails">Filter definitions are used
+in exposure calculations. Please add your own filter definitions.</a>
+
+<p><a id="PrintDefDetails2" name="PrintDefDetails2"></a><a
+id="PrintDefDetails1" name="PrintDefDetails1">Perform a long press on a filter
+name in the list to delete the item.</a> </p>
+
+<p><a id="PrintDefDetails">You can reset this list to default values; please
+note that all own definitions and customisations are permanently lost.</a></p>
+
+<h4 id="L3699">Settings - Print Definitions</h4>
+
+<p>Print definitions are used to determine the circle of confusion (CoC) for
+Depth of Field (DoF) calculations. Please add your own Print definitions.</p>
+
+<p>Perform a long press on a Print name in the list to delete the item.</p>
+
+<p>You can reset this list to default values; please note that all own
+definitions and customisations are permanently lost.</p>
+
+<h5 id="L13312">Settings - Comfortable viewing angle</h5>
+
+<p>The human 'comfortable' viewing angle for the free version is 60 degrees.
+The High-Precision purchasable feature allows to configure the angle.</p>
+
+<h5 id="L13314">Settings - Human eye resolution</h5>
+
+<p>The human eye resolution for the free version is 5 lp/mm. The High-Precision
+purchasable feature allows to configure the resolution.</p>
+
+<h4 id="L3705">Settings - Configuration</h4>
+
+<h5 id="L3707">Precision</h5>
+
+<p>Calculation precision for the free version is 3 significant digits. The
+High-Precision purchasable feature allows to configure the precision between 2
+and 8 digits.</p>
+
+<h5 id="L3709">Stop scale</h5>
+
+<p>This setting allows the configuration of the stop scale, such as using full,
+1/4, 1/3, 1/2 stops.</p>
+
+<h5 id="L3711">Unit of Measurement</h5>
+
+<p>This setting allows to change between Meter and Feet as the unit of
+measurement for distance.</p>
+
+<h5 id="L3713">Film / sensor speed ('ISO') type</h5>
+
+<p>This setting allows configuration of the available ISO values. It can be
+restricted to the ISO 12232:2006 standard values, or extended to include camera
+manufacturer values.</p>
+
+<h5 id="L3715">Wavelength</h5>
+
+<p>This setting allows configuration of the light wavelength used for the <a
+href="http://en.wikipedia.org/wiki/Airy_disk">Airy Disk</a> calculation used to
+show the diffraction influence in Depth of Field calculations. The value is in
+nanometer.</p>
+
+<h5 id="L3717">Screen</h5>
+
+<p>This setting provides you with configuration of the application screens.</p>
+
+<p><img alt="Settings Screen" src="../images/Screenshot_Settings_Screen_p.png"
+width="295" height="198" /></p>
+
+<p></p>
+
+<p>You are able to customise the screen background and select either the
+default background or change to a custom color using the color picker. It is
+recommeded to use a light color to retain good visibility of the application
+screen information.</p>
+
+<p><img alt="Settings Screen Color"
+src="../images/Screenshot_Settings_Screen_Color_p.png" width="295" height="503"
+/></p>
+
+<h4 id="L4499">Settings - Share</h4>
+
+<p>This function allows you to share a link to this application with your
+friends. Depending on what applications are installed on your device, you can
+for example use email, Facebook, instant messaging, cloud storage.</p>
+
+<p>The shared link opens Google Play to download and install the
+application.</p>
+
+<p><img alt="Settings share" src="../images/Screenshot_Settings_Share_p.png"
+width="295" height="504" /></p>
+<a id="purchaseList"></a> 
+
+<h4 id="L4504">Settings - Purchases</h4>
+
+<p>This function allows you to purchase additional functionality using Google
+in-app payment.</p>
+
+<p>A list of purchasable features is presented:</p>
+
+<p><img alt="Purchase list" src="../images/Screenshot_purchase_list_p_en.png"
+width="295" height="503" /></p>
+
+<p>Symbols indicate the purchase status for each item:</p>
+<dl>
+  <dt><img alt="purchase icon" src="../images/ic_action_purchase.png"
+  width="48" height="48" /></dt>
+    <dd>This symbol indicates that the feature is for purchase.</dd>
+  <dt><img alt="Green check tick" src="../images/btn_check_buttonless_on.png"
+  width="41" height="72" /></dt>
+    <dd>This symbol indicates that you have purchased the feature already and
+      is ready for use. Or it is currently active for a trial run.</dd>
+  <dt><img alt="Grey check tick" src="../images/btn_check_buttonless_off.png"
+  width="41" height="72" /></dt>
+    <dd>This symbol alerts that there is a problem with the purchase. 
+      <p>Press the <em>Reload</em> button to refresh your feature purchases
+      from Google Play; this might resolve the alert.</p>
+    </dd>
+</dl>
+
+<p>Click on the item to view a more detailed description of the feature and the
+purchase price is shown:</p>
+
+<p><img alt="Purchase detail"
+src="../images/Screenshot_Settings_Purchases_Detail_notpurchased_p_en.png"
+width="295" height="503" /></p>
+
+<p><a id="rewardList">On this screen you can abort the purchase using
+<strong>Cancel</strong>.</a> </p>
+
+<p>Before purchasing you may want to trial the feature. Use the
+<strong>TryMe</strong> button and the functionality will be enabled for a
+limited time (usually 15 minutes). The trial can be performed up to 3 times.
+Please note that the trial ends either on expiry of the trial time or exit from
+the application.</p>
+
+<p>Use the <strong>Purchase</strong> button to buy the feature. You will be
+redirected to Google Play where you are able to perform payment.</p>
+
+<p><img alt="Purchase details"
+src="../images/Screenshot_purchase_detail_p_en.png" width="295" height="504"
+/></p>
+
+<h4 id="L4522">Settings - Rewards</h4>
+
+<p>Reward points can be earned by completing surveys and viewing other
+advertisement content.</p>
+
+<p>After earning some points you can use them to activate otherwise chargable
+functionality for a limited time.</p>
+
+<p><img alt="Settings Rewards"
+src="../images/Screenshot_Settings_Rewards_p.png" width="295" height="502"
+/></p>
+
+<p></p>
+
+<p>The <em>Earn Points</em> screen lists surveys and advertisement. Click on
+one of the active buttons and complete the flow to earn the shown number of
+points. As soon as you've earned points the total points held in your
+<em>wallet</em> will be updated.</p>
+
+<p>Please note that some of the content may not be available, and the button
+remains inactive. As soon as content becomes available the associated button
+will become active.</p>
+
+<p><img alt="Settings Rewards Earn"
+src="../images/Screenshot_Settings_Rewards_Earn_p.png" width="295" height="503"
+/></p>
+
+<p></p>
+
+<p>Once you have earned some points, redeem them by subscribing to one or more
+additional application functionality. On selection of one of the application
+features available to the rewards system, a Reward Detail screen is shown. This
+screen provides you with a feature description and your current subscription
+status for this feature, as well as the number of points required for a 24
+hours activiation.</p>
+
+<p>The <strong>Cancel</strong> button can be used to move back to the list
+screen without making any changes.</p>
+
+<p>Use the <strong>Subscribe</strong> button to subscribe to the application
+feature. Once subscribed, the feature will be activated as soon as sufficient
+points are in your Wallet. As long as you maintain sufficient points in your
+Wallet the application feature will be reactivated on expiry of the 24 hours
+activiation, and the number of points will be deducted accordingly.</p>
+
+<p>You may unsubscribe from the application feature at any time using the
+<strong>Stop</strong> button. The subscription will be ended, and access to the
+feature remains active until expiry of the activation period. You may subscribe
+to the feature again when needed.</p>
+
+<p><img alt="Settings Rewards Details"
+src="../images/Screenshot_Settings_Rewards_Details_p.png" width="295"
+height="502" /></p>
+
+<h4 id="L4547">Settings - Google Analytics</h4>
+
+<p>This application collects some usage patterns through Google Analytics. The
+information is used to identify the general usage pattern of the application,
+which helps use to continue improvements of features. No personal information
+is used; all information is aggregated across the whole user community.</p>
+
+<p>With this option you are able to opt-out from this feature.</p>
+
+<h3 id="L4549">Tracking Settings</h3>
+
+<p>For Map settings please see below.</p>
+
+<p><img alt="Settings Tracking Screen"
+src="../images/Screenshot_Settings_Tracking_p.png" width="295" height="691"
+/></p>
+
+<p></p>
+
+<p>You are able to choose your preferred location provider from GPS, Network
+Tower or Passive.</p>
+
+<p><img alt="Settings Location Provider"
+src="../images/Screenshot_Settings_Location_Provider_p.png" width="295"
+height="503" /></p>
+
+<p>Select your preferred location provider:</p>
+<dl>
+  <dt>GPS</dt>
+    <dd>The most accurate tracking, but depending on your device may consume
+      more power.</dd>
+  <dt>Network Tower</dt>
+    <dd>This type of location provider uses less power, but provides only
+      approximate location information.</dd>
+  <dt>Passive</dt>
+    <dd>No additional power is consumed, but receives location information only
+      when another application on your device requests it; good for background
+      tracking. </dd>
+</dl>
+
+<h3 id="L4580">Map Settings</h3>
+
+<p>Customise the presentation of your map and how information is shown.</p>
+
+<p><img alt="Settings Map screen" src="../images/Screenshot_Settings_Map_p.png"
+width="295" height="502" /></p>
+
+<p></p>
 </body>
 </html>
