@@ -44,7 +44,7 @@
       <li><a href="#L608">Field of View (FOV)</a></li>
     </ul>
   </li>
-  <li><a href="#L4334">Tracking</a> 
+  <li><a href="#L4334">Tracking and Ephemeris</a> 
     <ul>
       <li><a href="#L4342">TRACKING Screen</a> 
         <ul>
@@ -52,8 +52,24 @@
           <li><a href="#L4401">Finish Logging</a></li>
         </ul>
       </li>
-      <li><a href="#L4432">MAP Screen</a></li>
+      <li><a href="#L4432">MAP Screen</a> 
+        <ul>
+          <li><a href="#L2618">Map Button Row</a></li>
+          <li><a href="#L712">Map Tracking</a></li>
+          <li><a href="#L2669">Map Places</a></li>
+          <li><a href="#L741">Map Ephemeris</a></li>
+        </ul>
+      </li>
       <li><a href="#L4469">PLACES Screen</a></li>
+      <li><a href="#L3403">EPHEMERIS Screen</a> 
+        <ul>
+          <li><a href="#L4345">Graph</a></li>
+          <li><a href="#L3413">Compass Rose</a></li>
+          <li><a href="#L3415">Ephemeris Calculations</a></li>
+          <li><a href="#L3417">Twilight Data</a></li>
+        </ul>
+      </li>
+      <li><a href="#L3018">Location Search</a></li>
     </ul>
   </li>
   <li><a href="#L21478">In-App Purchases</a> 
@@ -74,6 +90,7 @@
               <li><a href="#L3695">Settings - Cameras</a></li>
               <li><a href="#L3697">Settings - Filters</a></li>
               <li><a href="#L3699">Settings - Print Definitions</a></li>
+              <li><a href="#L6553">Settings - Location Definitions</a></li>
             </ul>
           </li>
           <li><a href="#L13312">Settings - Comfortable viewing angle</a></li>
@@ -95,6 +112,11 @@
         </ul>
       </li>
       <li><a href="#L4549">Tracking Settings</a></li>
+      <li><a href="#L6765">Ephemeris Settings</a> 
+        <ul>
+          <li><a href="#L6769">Settings - Locations</a></li>
+        </ul>
+      </li>
       <li><a href="#L4580">Map Settings</a></li>
     </ul>
   </li>
@@ -105,8 +127,8 @@
 
 <p>Photoxor C1 is a photography tool for <strong>exposure</strong> and
 <strong>depth of field</strong> calculations, <strong>GPS location
-tracking</strong>. Visualize locations on a map, and quickly see what's closest
-to you.</p>
+tracking</strong>, ephemeris <strong>sun and moon calculations</strong>.
+Visualize locations on a map, and quickly see what's closest to you.</p>
 
 <p>Use the device camera based <strong>lightmeter</strong> to estimate an
 Exposure Value (EV) reading, determine camera settings and calculate
@@ -127,6 +149,9 @@ depending on the anticipated minimum viewing distance.</p>
 travel. You can also record audio notes to quickly store information on your
 way. For reference you may want to take geotagged photographs with your device
 camera.</p>
+
+<p>Ephemeris sun and moon calculations allow you to determine Golden and Blue
+Hours, direction of sun and moon and much more.</p>
 
 <p>A number of in-app purchases are available to further extend
 capabilities.</p>
@@ -159,7 +184,7 @@ away.</p>
 src="../images/Screenshot_Startup_rearrange_icons_p.png" width="295"
 height="504" /></p>
 
-<p>Please repeat this process for other icons you want to rearrange. Different
+<p>Please repeat this process for other icons you want to rearrange. Separate
 arrangements can be performed for portrait and landscape screen views.</p>
 
 <p>New versions of the application may introduce new icons. They are placed
@@ -177,8 +202,8 @@ confusion.</p>
 
 <p>This screen enables you to perform exposure calculations in two ways:
 calculate the exposure value from your camera settings, or - in reverse - enter
-an exposure value (use the lightmeter for an indicative value) and determine
-the best camera settings.</p>
+an exposure value (use the <a href="#L222">lightmeter</a> for an indicative
+value) and determine the best camera settings.</p>
 
 <p><img alt="Screenshot Exposure" src="../images/Screenshot_ev_p_en.png"
 width="295" height="499" /></p>
@@ -195,11 +220,11 @@ width="295" height="499" /></p>
 </ul>
 
 <p>The corresponding calculated <strong>exposure value</strong> (EV) is now
-shown below together with a short description and an image to indicate the
-scenario. The luminance value is expressed in candela per square meter
+shown below, together with a short description and an image to indicate a
+typical scenario. The luminance value is expressed in candela per square meter
 (cd/m<sup>2</sup>).</p>
 
-<p>To refine the values use the Locks mechanism.</p>
+<p>To refine the values use the <a href="#L864">Locks mechanism</a>.</p>
 
 <p>Go to Settings for a change of the Stop system (value increments, for
 example values in full stops only or 1/3 stops).</p>
@@ -257,7 +282,7 @@ src="../images/Screenshot_filter_p_en.png" width="295" height="503" /></p>
 use the Exposure (EV) screen to calculate these settings, and then move to this
 Filter screen. </p>
 
-<p>Note: In case a filter is attached already (such as a protective or UV
+<p>TIp: In case a filter is attached already (such as a protective or UV
 filter), there is not need to remove, just don't add to the filter stack.</p>
 
 <h4 id="L1076">Filter Stack</h4>
@@ -290,9 +315,9 @@ src="../images/Screenshot_dof_p_en.png" width="295" height="503" /></p>
 
 <p>For this calculation you select your camera, aperture, focal length,
 distance and optionally adjust the Circle of Confusion (CoC) value (for
-advanced scenarios use the CoC calculation screen). The depth of field is then
-shown with near and far distance values. The hyperfocal length is calculated,
-too.</p>
+advanced scenarios use the <a href="#L596">CoC calculation screen</a>). The
+depth of field is then shown with near and far distance values. The hyperfocal
+length is calculated, too.</p>
 
 <p>For focal length and also distance you can either use the (logarithmic)
 sliders to quickly set approximate values or use the entry fields for a precise
@@ -313,17 +338,18 @@ based on the set CoC value without consideration of diffraction.</p>
     boundary between 'sharp' and 'blur'.</li>
 </ul>
 
-<p>The distance where the CoC value is below the reference value is considered
-as 'sharp'; lower CoC values indicate higher sharpness.</p>
+<p>The distance value where the CoC value is below the reference value is
+considered as 'sharp'; lower CoC values indicate higher sharpness.</p>
 
 <p>Use this graph to quickly visualize changes to the sharpness range.</p>
 
 <p>Press on the graph area to show or hide the legend.</p>
 
-<p>In case you need to define a new camera characteristics or amend, press the
-settings button<img alt="Settings" src="../images/ic_action_settings.png"
-width="48" height="48" /> next to the camera. Also go to Settings for a change
-of the aperture value increment (for example full stops only or 1/3 stops).</p>
+<p>In case you need to define a new <a href="#L3695">camera characteristics</a>
+or amend, press the settings button<img alt="Settings"
+src="../images/ic_action_settings.png" width="48" height="48" /> next to the
+camera. Also go to Settings for a change of the aperture value increment (for
+example full stops only or 1/3 stops).</p>
 <a id="DofRange"></a> 
 
 <h3 id="L257">Depth of Field - Near / Far (DOF NEAR/FAR)</h3>
@@ -344,18 +370,18 @@ might fail for more extreme scenarios.</p>
 <h3 id="L596">CoC</h3>
 
 <p>The <a href="http://en.wikipedia.org/wiki/Circle_of_confusion">CoC</a> value
-used for Depth of Field calculations is traditionally based on the <a
-href="http://en.wikipedia.org/wiki/Zeiss_formula">Zeiss formula</a>, which uses
-a print size of 30cm x 20cm viewed from 25cm distance (the comfortable viewing
-distance for the human eye). For general calculations this CoC value is often
-satisfactory.</p>
+used for <a href="#Dof">Depth of Field calculations</a> is traditionally based
+on the <a href="http://en.wikipedia.org/wiki/Zeiss_formula">Zeiss formula</a>,
+which uses a print size of 30cm x 20cm viewed from 25cm distance (the
+comfortable viewing distance for the human eye). For general calculations this
+CoC value is often satisfactory.</p>
 
 <p>To produce high-quality prints a more refined CoC value is required. This
 calculation screen removes guessing, and allows to perform non-standard CoC
 calculations based on a camera sensor and print specification. It determines
 the required sensor CoC and print resolution (<a
 href="http://en.wikipedia.org/wiki/Dots_per_inch">DPI</a>) depending on the
-anticipated minimum viewing distance. And it helps you to also understand the
+anticipated minimum viewing distance. And it helps you to also understand a
 scenario where the print resolution is a given factor.</p>
 
 <p><img alt="Screenshop CoC Calculation"
@@ -364,14 +390,14 @@ src="../images/Screenshot_CoC_Calc_p_en.png" width="295" height="561" /></p>
 <p>To calculate a CoC value specific to your requirements first select your
 camera. Important is the correct sensor size. Use the <img alt="Settings"
 src="../images/ic_action_settings.png" width="48" height="48" /> icon next to
-the camera selection if you would like to create a new camera setting or amend
-an existing one.</p>
+the camera selection if you would like to create a new <a href="#L3695">camera
+setting</a> or amend an existing one.</p>
 
 <p>Next you need to decide on the print size of the planned image. Here as
 well, use the <img alt="Settings" src="../images/ic_action_settings.png"
 width="48" height="48" /> icon next to the print selection if you would like to
-create a new print definition or amend an existing one. Most important is the
-size of the print.</p>
+create a new <a href="#L3699">print definition</a> or amend an existing one.
+Most important is the size of the print.</p>
 
 <p>Usually the calculation is based on the width, but you may alternatively use
 height or diagonal. Depending on you preference, choose your unit of
@@ -380,12 +406,12 @@ measurement.</p>
 <p>The application now calculates the 'comfortable' viewing distance for a
 human eye. This is based on the viewing angle. If you have purchased the
 high-precision extension, you are able to amend the angle (standard is 60
-degree).</p>
+degree) in Settings.</p>
 
 <p>It also calculates the minimum required print resolution in Dots per Inch
-(DPI), and the required sensor CoC. This calculation is also based on the human
-eye resolution. The standard value is 5 lp/mm. If you have purchased the
-high-precision extension, you are able to amend this value.</p>
+(DPI), and the required sensor CoC value. This calculation is also based on the
+human eye resolution. The standard value is 5 lp/mm. If you have purchased the
+high-precision extension, you are able to amend this value in Settings.</p>
 
 <p>The next section allows you to define a <strong>minimum viewing
 distance</strong>. The viewer of your print might first observe at the
@@ -395,7 +421,7 @@ any more. Enter the anticipated minimum viewing distance and get the required
 print resolution (DPI) and CoC.</p>
 
 <p>The following section is based on the <strong>print resolution</strong>. For
-a given print resolution you are able to determine what would be minimum
+a given print resolution you are able to determine what would be the minimum
 acceptable viewing distance and the matching CoC.</p>
 <a id="Fov"></a> 
 
@@ -412,9 +438,9 @@ determines the angle of view, which is shown for both width and height. Now
 increase or decrease the distance until you get a Height value larger than the
 building height.</p>
 
-<p>In reverse, if you have got a zoom lense, enter your distance from the
-object and change the focal length until the Height value larger than the
-building height.</p>
+<p>In reverse, if you have got a zoom lens, enter your distance from the object
+and change the focal length until the Height value is larger than the building
+height.</p>
 
 <p>The Field of View screen supports both dimensional and angular
 calculation.</p>
@@ -425,14 +451,16 @@ can be set in the same way.</p>
 
 <p>Distance values can be entered and shown either in meter or feet.</p>
 
-<p>In case you need to define a new camera characteristics, press the settings
-button <img alt="Settings" src="../images/ic_action_settings.png" width="48"
-height="48" /> next to the camera and add a new one.</p>
+<p>In case you need to define a new c<a href="#L3695">amera
+characteristics</a>, press the settings button <img alt="Settings"
+src="../images/ic_action_settings.png" width="48" height="48" /> next to the
+camera and add a new one.</p>
 
-<h2 id="L4334">Tracking</h2>
-Use GPS tracking to log your movement path to a file or display on a map. 
+<h2 id="L4334">Tracking and Ephemeris</h2>
+Use GPS tracking to log your movement path to a file or display on a map. Find
+sun and moon directions with the Ephemeris screen. 
 
-<p>Three screens (tabs) are available: TRACKING, MAP, PLACES</p>
+<p>Four screens (tabs) are available: TRACKING, MAP, PLACES, EPHEMERIS.</p>
 
 <h3 id="L4342">TRACKING Screen</h3>
 
@@ -526,29 +554,87 @@ dialog. You can then either select an old recording for sharing or abort.</p>
 <h3 id="L4432">MAP Screen</h3>
 
 <p>The MAP screen is based on Google Maps. It allows you to display the
-recorded path, a previously logged path, or mark places (see PLACES screen).</p>
+recorded path, a previously logged path, or mark places (see PLACES screen). It
+also allows you to present sun and moon data, such as the directions for rise
+and set of sun and moon.</p>
 
-<p>To show the map, Internet connectivity is required. You may use Google Map
-to persist a map area for offline access.</p>
+<p>To display the map, Internet connectivity is required. You may use the
+Google Map application to persist a map area for offline access.</p>
+
+<h4 id="L2618">Map Button Row</h4>
+
+<p>A row of icon buttons is located below the map display. These buttons
+provide quick access to show particular information on the map.</p>
+
+<p>You can either use the <img alt="overflow icon"
+src="../images/ic_menu_moreoverflow_normal_holo_light.png" width="32"
+height="32" />icon to navigate to the next or previous set of buttons or use a
+sliding guesture.</p>
+
+<p>On larger devices in landscape mode all buttons are shown without the need
+to page through.</p>
+
+<h4 id="L712">Map Tracking</h4>
+
+<p>The Map screen allows to display the currently tracked path, and also load
+previously saved ones.</p>
 
 <p><img alt="Tracking - Map Screen (Path)"
 src="../images/Screenshot_Map_path_p.png" width="295" height="502" /></p>
 
-<p></p>
+<p>The icon <img alt="logger icon" src="../images/ic_tracking.png" width="32"
+height="32" /><strong></strong> is used to present the <strong>currently logged
+path</strong> on the map. Special markers are shown for audio recordings and
+photos taken.</p>
+
+<p>The icon <img alt="load track" src="../images/ic_menu_save.png" width="32"
+height="32" /><strong></strong> allows to <strong>load an existing log
+file</strong> and present the path on the map.</p>
+
+<p>Use icon<img alt="clear all from map" src="../images/ic_clear.png"
+width="32" height="32" /> to <strong>clear</strong> all markers and paths.</p>
+
+<p>Use icon <img alt="overflow"
+src="../images/ic_menu_moreoverflow_normal_holo_light.png" width="32"
+height="32" />to display more icon buttons.</p>
+
+<h4 id="L2669"><a id="MapEphemeris">Map Places</a></h4>
 
 <p><img alt="Tracking - Map Screen (Places)"
 src="../images/Screenshot_Map_p.png" width="295" height="503" /></p>
 
-<p>The <strong><em>Logger</em> </strong>button<strong></strong> is used to
-present the currently logged path on the map. Special markers are shown for
-audio recordings and photos taken.</p>
+<h4 id="L741">Map Ephemeris</h4>
 
-<p>The <strong><em>Load Log File</em> </strong>button<strong></strong> allows
-to load an existing log file and present the path on the map.</p>
+<p>The Map screen allows you to visualise the sun and moon directions; a great
+way to plan the best location for your photo shoot.</p>
 
-<p>Use the <strong><em>None</em> </strong>button<strong></strong> to clear all
-markers and path.</p>
-<a id="places"></a> 
+<p><img alt="Map ephemeris details"
+src="../images/Screenshot_Map_ephemeris_p.png" width="295" height="503" /></p>
+
+<p>The icon<img alt="sun icon" src="../images/ic_sun_up.png" width="32"
+height="32" /> shows or hides the ephemeris lines.</p>
+
+<p>The icon<img alt="my places icon" src="../images/ic_menu_myplaces.png"
+width="32" height="32" /> show the currently chosen ephemeris location.</p>
+
+<p>The icon<img alt="my location" src="../images/ic_menu_mylocation.png"
+width="32" height="32" /> selects the current GPS location (if available) as
+the ephemeris location.</p>
+
+<p>The icon<img alt="search icon" src="../images/ic_menu_search.png" width="32"
+height="32" /> initiates a location search.</p>
+
+<p></p>
+
+<p><img alt="Ephemeris screen with time slider"
+src="../images/Screenshot_Map_ephemeris_time_p.png" width="295" height="503"
+/></p>
+
+<p>Use the slider to change the time of day and see how sun and moon direction
+changes.</p>
+
+<p>The<img alt="time now icon" src="../images/ic_dialog_time.png" width="32"
+height="32" /> icon sets the current date and time.</p>
 
 <h3 id="L4469">PLACES Screen</h3>
 
@@ -567,6 +653,235 @@ place.</p>
 <p>Use the <strong><em>On Map</em> </strong>button<strong></strong> to put
 markers for all places in the list onto the map (does not automatically move to
 MAP screen!). You can do this for multiple places lists.</p>
+<a id="Ephemeris"></a> 
+
+<h3 id="L3403">EPHEMERIS Screen</h3>
+
+<p><strong>Please note this is a new feature. We tested quite comprehensively
+but there might still be some (hopefully) minor bugs. In case you find
+calculation issues please email to info@photoxor.com and we'll try our best to
+fix it in the next release.</strong></p>
+
+<p>The ephemeris screen provides you with a wide variety of sun and moon
+related calculations. It includes rise and set times and directions, twilight
+times, moon phase.</p>
+
+<p>For these calculations you need to set both the geographic location and
+time/date.</p>
+
+<p>The <a href="#L3413">compass rose</a> visualises the rise, set and time
+specific directions, and also indicates the altitude above / below horizon for
+sun and moon throughout a day.</p>
+
+<p>Ephemeris related settings are available to customise the colors used.</p>
+
+<p><img alt="Ephemeris screen" src="../images/Screenshot_Ephemeris_all_p.png"
+width="295" height="1107" /></p>
+
+<p>First you need to choose a <strong>location</strong>. There are multiple
+options to do this:</p>
+<dl>
+  <dt>Drop-Down Selection:</dt>
+    <dd>Use the drop-down to select a predefined location. There are also two
+      special location types: <em>Current GPS Location</em> and <em>User
+      Location</em>.</dd>
+    <dd>In case the location of interest isn't already defined, you may define
+      either a User Location or press the<img alt="settings location list"
+      src="../images/ic_action_settings.png" width="48" height="48" /> icon to
+      open the <a href="#L6553">locations list</a> to enter the location
+      definition. Or start a location search by pressing the<img
+      alt="location search" src="../images/ic_menu_search.png" width="32"
+      height="32" /> icon.</dd>
+  <dt>Current GPS Location:</dt>
+    <dd>In case a GPS location is available it can be selected for the
+      Ephemeris calculations. Please note that the Ephemeris screen is a
+      passive listener to GPS locations (which does not draw extra power), and
+      therefore only receives location information if requested by some other
+      activity (other application or tracking is enable on TRACKING
+    screen).</dd>
+    <dd>Once a GPS location is set, the position latitude and longitude
+      coordinates are shown.</dd>
+  <dt>User Location</dt>
+    <dd>A User Location is a temporary location, which can be set through a <a
+      href="#L3018">location search</a> or by moving the location marker on the
+      MAP screen.</dd>
+</dl>
+
+<p>Once a location is defined, the timezone will be set where possible.
+Alternatively you might select from the timezone drop-down (which is a quite
+long list).</p>
+
+<p><em>Important: Times shown on this screen are expressed in terms of this
+timezone, except for the graph where the location location timezone is
+applied!</em></p>
+
+<p>Next set the <strong>date and time</strong> for this calculation using the
+buttons. To get the current date / time press <strong><img alt="time now"
+src="../images/ic_dialog_time.png" width="32" height="32" />.</strong></p>
+
+<h4 id="L4345">Graph</h4>
+
+<p>The graph presents the sun and moon altitudes throughout a day. The current
+time is marked by a vertical line. A slider below the graph allows to change
+the time of the day for the calculation.</p>
+
+<h4 id="L3413">Compass Rose</h4>
+
+<p>The compass rose presents:</p>
+<ul>
+  <li>Sun rise direction</li>
+  <li>Sun set direction</li>
+  <li>Sun direction at specified time of day (with sun symbol)</li>
+  <li>Sun altitude throughout the day</li>
+  <li>Moon rise direction</li>
+  <li>Moon set direction</li>
+  <li>Moon direction at specified time of day (with moon symbol)</li>
+  <li>Moon altitude throughout the day</li>
+</ul>
+
+<p>Please note that an altitude below horizon is shown as dashed line.</p>
+
+<p>Colors can be changed using the <img alt="settings ephemeris"
+src="../images/ic_action_settings.png" width="48" height="48" /> icon below the
+compass rose.</p>
+<a id="EphemerisCalculations"></a> 
+
+<h4 id="L3415">Ephemeris Calculations</h4>
+
+<p>The Calculations section of this screen provides detailed time, azimuth and
+altitude values for sun and moon based on the set location and date. Also the
+used colors are visualized.</p>
+<a id="EphemerisTwilight"></a> 
+
+<h4 id="L3417">Twilight Data</h4>
+
+<p>A good introduction into the various twilight scenarios can be found at <a
+href="http://petapixel.com/2014/06/11/understanding-golden-hour-blue-hour-twilights/">http://petapixel.com/2014/06/11/understanding-golden-hour-blue-hour-twilights/</a>.</p>
+
+<p>We calculate the times based on the sun altitude above or below the
+horizon:</p>
+
+<table border="1" style="width: 100%">
+  <col />
+  <col />
+  <col />
+  <col />
+  <col />
+  <tbody>
+    <tr>
+      <th>TWILIGHT</th>
+      <th colspan="2"
+      style="text-align:center;margin-left:auto;margin-right:auto;"><strong>Morning</strong>
+        (Degree above / below horizon)</th>
+      <th colspan="2"
+      style="text-align:center;margin-left:auto;margin-right:auto;"><strong>Afternoon</strong>
+        (Degree above / below horizon)</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th
+      style="text-align:center;margin-left:auto;margin-right:auto;">Start</th>
+      <th style="text-align:center;margin-left:auto;margin-right:auto;">End</th>
+      <th
+      style="text-align:center;margin-left:auto;margin-right:auto;">Start</th>
+      <th style="text-align:center;margin-left:auto;margin-right:auto;">End</th>
+    </tr>
+    <tr>
+      <td><strong>Golden Hour</strong></td>
+      <td style="text-align:center;margin-left:auto;margin-right:auto;">- 4
+      °</td>
+      <td style="text-align:center;margin-left:auto;margin-right:auto;">+ 6
+      °</td>
+      <td style="text-align:center;margin-left:auto;margin-right:auto;">+ 6
+      °</td>
+      <td style="text-align:center;margin-left:auto;margin-right:auto;">- 4
+      °</td>
+    </tr>
+    <tr>
+      <td><strong>Blue Hour</strong></td>
+      <td style="text-align:center;margin-left:auto;margin-right:auto;">- 6
+      °</td>
+      <td style="text-align:center;margin-left:auto;margin-right:auto;">- 4
+      °</td>
+      <td style="text-align:center;margin-left:auto;margin-right:auto;">-4
+      °</td>
+      <td style="text-align:center;margin-left:auto;margin-right:auto;">- 6
+      °</td>
+    </tr>
+    <tr>
+      <td><strong>Civil Twilight</strong></td>
+      <td style="text-align:center;margin-left:auto;margin-right:auto;">- 6
+      °</td>
+      <td style="text-align:center;margin-left:auto;margin-right:auto;">0 °</td>
+      <td style="text-align:center;margin-left:auto;margin-right:auto;">0 °</td>
+      <td style="text-align:center;margin-left:auto;margin-right:auto;">- 6
+      °</td>
+    </tr>
+    <tr>
+      <td><strong>Nautical Twilight</strong></td>
+      <td style="text-align:center;margin-left:auto;margin-right:auto;">- 12
+      °</td>
+      <td style="text-align:center;margin-left:auto;margin-right:auto;">0 °</td>
+      <td style="text-align:center;margin-left:auto;margin-right:auto;">0 °</td>
+      <td style="text-align:center;margin-left:auto;margin-right:auto;">- 12
+      °</td>
+    </tr>
+    <tr>
+      <td><strong>Astronomical Twilight</strong></td>
+      <td style="text-align:center;margin-left:auto;margin-right:auto;">- 18
+      °</td>
+      <td style="text-align:center;margin-left:auto;margin-right:auto;">0 °</td>
+      <td style="text-align:center;margin-left:auto;margin-right:auto;">0 °</td>
+      <td style="text-align:center;margin-left:auto;margin-right:auto;">- 18
+      °</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="L3018">Location Search</h3>
+
+<p>Both on the Map and Ephemeris screens you find the search icon <img
+alt="search icon" src="../images/ic_menu_search.png" width="32" height="32" />,
+which initiates a location search. When you press this button a little search
+text entry opens.</p>
+
+<p><img alt="Search text box" src="../images/Screenshot_Map_Search_1_p_en.png"
+width="295" height="504" /></p>
+
+<p>Now start entering the name of the location and a list below appears showing
+results.</p>
+
+<p><img alt="Search results" src="../images/Screenshot_Map_Search_2_p_en.png"
+width="295" height="504" /></p>
+
+<p>Once you found the correct place, click on it and a marker <img
+alt="marker current location" src="../images/marker_map_search_result.png"
+width="48" height="48" /> for the search result is presented on the map.</p>
+
+<p><img alt="search result marker on map"
+src="../images/Screenshot_Map_Search_3_p_en.png" width="295" height="504" /></p>
+
+<p>Click on the marker to see further options.</p>
+
+<p><img alt="search result marker options"
+src="../images/Screenshot_Map_Search_4_p_en.png" width="295" height="503" /></p>
+
+<p>You might want to add this place to the list of your stored locations; press
+<em>Add</em>:</p>
+
+<p><img alt="search result as new location"
+src="../images/Screenshot_Map_Search_5_p_en.png" width="295" height="504" /></p>
+
+<p>The location definition screen is prepopulated. Amend any values and
+<em>Save</em>.</p>
+
+<p>Alternatively to storing the location you may use this place as the current
+location for ephemeris calculations. Press Current on the search result marker
+dialog and the marker changes to <img alt="marker current location"
+src="../images/marker_map_current_location.png" width="32" height="32" />.</p>
+
+<p><img alt="map with current location marker"
+src="../images/Screenshot_Map_Search_6_p_en.png" width="295" height="503" /></p>
 
 <h2 id="L21478">In-App Purchases</h2>
 
@@ -750,6 +1065,45 @@ characteristics.</p>
   <dt>Notes</dt>
     <dd>You may enter some notes to describe the print definition.</dd>
     <dd>This information is not used for calculation purposes.</dd>
+</dl>
+
+<h5 id="L6553">Settings - Location Definitions</h5>
+
+<p>Locations are used for ephemeris calculations and can be defined using
+latitude and longitude coordinates.</p>
+<dl>
+  <dt>Location Name</dt>
+    <dd>A name for the location, such as the address.</dd>
+    <dd>In case you don't want to manually enter location coordinates, use the
+      search feature.</dd>
+    <dd>Optionally enter the search criteria in the location name field and
+      press the search icon <strong><img alt="location search"
+      src="../images/ic_menu_search.png" width="32" height="32" /></strong>.
+      This will open the search text field and present you with search
+      resultts. On selection of a result from the list the location will be
+      shown on the map screen.</dd>
+  <dt>Timezone</dt>
+    <dd>The timezone of the location.</dd>
+    <dd>After the coordinates (longitude and latitude) are entered press the
+      <em>Set</em> button to automatically retrieve the timezone for the
+      location. Please note that daylight saving is date specific and the
+      current date will be used.</dd>
+  <dt>Longitude</dt>
+    <dd>The longitude of the location.</dd>
+    <dd>The entry format is <em>dd:mm:ss.ss</em></dd>
+    <dd>where <em>dd</em> are degrees, <em>mm</em> are minutes, <em>ss.ss</em>
+      are seconds, which could be a fractional value.</dd>
+  <dt>Latitude</dt>
+    <dd>The latitude of the location.</dd>
+    <dd>The entry format is the same as for longitude.</dd>
+  <dt>Elevation</dt>
+    <dd>The optional elevation of the location in meter above sea level.</dd>
+    <dd>Please note that this field is for information purposes only and
+      currently not used for calculations.</dd>
+  <dt>Notes</dt>
+    <dd>An optional description.</dd>
+    <dd>This field is for information purposes only and not used for
+      calculations.</dd>
 </dl>
 
 <h4 id="L13312">Settings - Comfortable viewing angle</h4>
@@ -969,6 +1323,28 @@ height="503" /></p>
       when another application on your device requests it; good for background
       tracking. </dd>
 </dl>
+
+<h3 id="L6765">Ephemeris Settings</h3>
+
+<p>Customize ephemeris presentation colors and define locations.</p>
+
+<p><img alt="settings ephemeris"
+src="../images/Screenshot_Settings_Ephemeris_p_en.png" width="295" height="504"
+/></p>
+
+<h4 id="L6769">Settings - Locations</h4>
+
+<p>For a general guide on using the list please see the general <a
+href="#L20979">guidelines</a>.</p>
+
+<p><img alt="location list" src="../images/Screenshot_Location_List_p_en.png"
+width="295" height="505" /></p>
+
+<p></p>
+
+<p><img alt="location details"
+src="../images/Screenshot_Location_Details_p_en.png" width="295" height="503"
+/></p>
 
 <h3 id="L4580">Map Settings</h3>
 
