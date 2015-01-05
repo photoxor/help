@@ -16,15 +16,15 @@
 <div class="toc">
 <ul>
   <li><a href="#L4277">Introduction</a></li>
-  <li><a href="#L4316">Startup Screen</a>
+  <li><a href="#L4316">Startup Screen</a> 
     <ul>
       <li><a href="#L4323">Icon Arrangement</a></li>
       <li><a href="#L1920">Navigation Drawer</a></li>
     </ul>
   </li>
-  <li><a href="#L576">Photography Calculations</a>
+  <li><a href="#L576">Photography Calculations</a> 
     <ul>
-      <li><a href="#L581">Exposure (EV)</a>
+      <li><a href="#L581">Exposure (EV)</a> 
         <ul>
           <li><a href="#L205">EV from Camera Settings</a></li>
           <li><a href="#L851">Exposure Value (EV)</a></li>
@@ -32,9 +32,9 @@
           <li><a href="#L222">Lightmeter</a></li>
         </ul>
       </li>
-      <li><a href="#L586">Filter Stack (FILTER)</a>
+      <li><a href="#L586">Filter Stack (FILTER)</a> 
         <ul>
-          <li><a href="#L1067">Camera Settings without Filter</a>
+          <li><a href="#L1067">Camera Settings without Filter</a> 
             <ul>
               <li><a href="#L8449">User Presets</a></li>
             </ul>
@@ -49,15 +49,15 @@
       <li><a href="#L608">Field of View (FOV)</a></li>
     </ul>
   </li>
-  <li><a href="#L4334">Tracking and Ephemeris</a>
+  <li><a href="#L4334">Tracking and Ephemeris</a> 
     <ul>
-      <li><a href="#L4342">TRACKING Screen</a>
+      <li><a href="#L4342">TRACKING Screen</a> 
         <ul>
           <li><a href="#L4396">Audio Recording</a></li>
           <li><a href="#L4401">Finish Logging</a></li>
         </ul>
       </li>
-      <li><a href="#L4432">MAP Screen</a>
+      <li><a href="#L4432">MAP Screen</a> 
         <ul>
           <li><a href="#L2618">Map Button Row</a></li>
           <li><a href="#L712">Map Tracking</a></li>
@@ -66,7 +66,7 @@
         </ul>
       </li>
       <li><a href="#L4469">PLACES Screen</a></li>
-      <li><a href="#L3403">EPHEMERIS Screen</a>
+      <li><a href="#L3403">EPHEMERIS Screen</a> 
         <ul>
           <li><a href="#L4345">Graph</a></li>
           <li><a href="#L3413">Compass Rose</a></li>
@@ -78,7 +78,7 @@
       <li><a href="#L3018">Location Search</a></li>
     </ul>
   </li>
-  <li><a href="#L21478">In-App Purchases</a>
+  <li><a href="#L21478">In-App Purchases</a> 
     <ul>
       <li><a href="#L21490">No-Advertisement</a></li>
       <li><a href="#L21502">High Precision Values</a></li>
@@ -86,11 +86,11 @@
       <li><a href="#L21512">Tracking Pro</a></li>
     </ul>
   </li>
-  <li><a href="#L4492">Settings</a>
+  <li><a href="#L4492">Settings</a> 
     <ul>
-      <li><a href="#L4494">General Settings</a>
+      <li><a href="#L4494">General Settings</a> 
         <ul>
-          <li><a href="#L20979">Settings - Definition Lists</a>
+          <li><a href="#L20979">Settings - Definition Lists</a> 
             <ul>
               <li><a href="#L20983">List Features</a></li>
               <li><a href="#L3695">Settings - Cameras</a></li>
@@ -102,7 +102,7 @@
           </li>
           <li><a href="#L13312">Settings - Comfortable viewing angle</a></li>
           <li><a href="#L13314">Settings - Human eye resolution</a></li>
-          <li><a href="#L3705">Settings - Configuration</a>
+          <li><a href="#L3705">Settings - Configuration</a> 
             <ul>
               <li><a href="#L3707">Precision</a></li>
               <li><a href="#L3709">Stop scale</a></li>
@@ -119,7 +119,7 @@
         </ul>
       </li>
       <li><a href="#L4549">Tracking Settings</a></li>
-      <li><a href="#L6765">Ephemeris Settings</a>
+      <li><a href="#L6765">Ephemeris Settings</a> 
         <ul>
           <li><a href="#L6769">Settings - Locations</a></li>
         </ul>
@@ -132,7 +132,7 @@
 
 <h2 id="L4277">Introduction</h2>
 
-<p>This document is for Photoxor C1 version 1.4.3 (41), which can be installed
+<p>This document is for Photoxor C1 version 1.4.4 (43), which can be installed
 or updated for free from <a name="Google" id="Google"
 href="http://play.google.com/store/apps/details?id=com.photoxor.fotoapp">Google
 Play</a>.</p>
@@ -279,13 +279,20 @@ value will be adjusted accordingly.</p>
 
 <h4 id="L222">Lightmeter</h4>
 
-<p>If your device is equipped with a camera, you may use it as a simple
-<strong>light meter</strong>. The light meter takes a picture and sets the EV
-according to the exposure details of the image. The EV will become locked. The
-accuracy of the recorded exposure value (EV) depends on your device.</p>
+<p>There are two types of lightmeter function available. One uses the device
+camera, the other the device light sensor.The buttons are only enabled if the
+device is fitted with camera / sensor.</p>
 
-<p>In case no camera can be accessed the light meter button is deactivated.</p>
-<a id="Filter"></a> 
+<p>If your device is equipped with a <strong>camera</strong>, you may use it as
+a simple <strong>light meter</strong>. The light meter takes a picture and sets
+the EV according to the exposure details of the image. The EV will become
+locked. The accuracy of the recorded exposure value (EV) depends on your
+device.</p>
+If your device is equipped with a <strong>light sensor</strong>, you may use
+this sensor to measure illuminance. Press the Light Sensor button and a dialog
+window is shown. The measured light intensity is shown in lux together with the
+calculated exposure value (EV). Once you accept the measurement, the EV is set
+and become locked. Camera settings are adjusted to reflect the EV.
 
 <h3 id="L586">Filter Stack (FILTER)</h3>
 
@@ -810,6 +817,13 @@ compass rose.</p>
 movement of the rose. When switched off the northern direction is always show
 on top. In Settings you are able to configure the application to automatically
 switch off the compass if the battery level is low.</p>
+
+<p>While the compass is on, the strength of the detected magnetic field is
+shown in micro tesla. Typical earth magnetic field readings are in a range
+between 30 and 60 micro tesla. The value is shown in red when outside this
+range. In particular higher values indicate other magnetic or electric sources.
+When using the compass, to get a good direction accuracy please ensure that you
+are away from magnetic or electric sources.</p>
 
 <p><a id="EphemerisCalculations"></a> </p>
 
