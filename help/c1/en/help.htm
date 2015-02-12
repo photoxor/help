@@ -22,6 +22,7 @@
       <li><a href="#L1920">Navigation Drawer</a></li>
     </ul>
   </li>
+  <li><a href="#L4883">Application Widget</a></li>
   <li><a href="#L576">Photography Calculations</a> 
     <ul>
       <li><a href="#L581">Exposure (EV)</a> 
@@ -114,6 +115,8 @@
               <li><a href="#L3715">Wavelength</a></li>
               <li><a href="#L3717">Screen</a></li>
               <li><a href="#L6032">Settings - Exposure Timer</a></li>
+              <li><a href="#L6289">Settings - Torch Auto Switch-Off
+              Time</a></li>
             </ul>
           </li>
           <li><a href="#L4499">Settings - Share</a></li>
@@ -136,7 +139,7 @@
 
 <h2 id="L4277">Introduction</h2>
 
-<p>This document is for Photoxor C1 version 1.4.6 (47), which can be installed
+<p>This document is for Photoxor C1 version 1.4.7 (49), which can be installed
 or updated for free from <a name="Google" id="Google"
 href="http://play.google.com/store/apps/details?id=com.photoxor.fotoapp">Google
 Play</a>.</p>
@@ -171,6 +174,9 @@ camera.</p>
 <p>Ephemeris sun and moon calculations allow you to determine Golden and Blue
 Hours, direction of sun and moon and much more.</p>
 
+<p>An application <strong>widget</strong> allows quick access to Logging and
+Tracking, and also provides a <strong>Torch</strong> function.</p>
+
 <p>A number of in-app purchases are available to further extend
 capabilities.</p>
 
@@ -183,8 +189,21 @@ href="http://photoxor.blogspot.com.au/">Photoxor Blog</a>.</p>
 Icons give you a one-click access to most of the application features. Color
 coding is used to present functionality grouping.</p>
 
+<p>Please click the icon button to open the function screen.</p>
+
 <p><img alt="Startup Screen" src="../images/Screenshot_Startup_p.png"
 width="295" height="498" /></p>
+
+<p></p>
+
+<p>There is one exception: the Torch function does not open a screen, but
+switches the Torch on or off:</p>
+
+<p><img alt="icon torch" src="../images/Start-Icon-Torch_en.png" width="80"
+height="80" /></p>
+
+<p>Please note that the torch icon is only shown if the device supports a
+camera flash function (the LED used by the torch).</p>
 
 <h3 id="L4323">Icon Arrangement</h3>
 
@@ -221,12 +240,37 @@ directly go to the screen.</p>
 <p><img alt="navigation drawer" src="../images/Screenshot_NavDrawer_en.png"
 width="295" height="484" /></p>
 
+<h2 id="L4883">Application Widget</h2>
+
+<p>When you install Photoxor C1 an application widget is installed as well. You
+can find it in the list of widgets for your device.</p>
+
+<p><img alt="widget" src="../images/Screenshot_Widget_en.png" width="295"
+height="70" /></p>
+
+<p>The widget provides</p>
+<ul>
+  <li>The Photoxor icon to quickly start the application.</li>
+  <li>The Tracking icon switches location tracking on / off.</li>
+  <li>The Logging icon switches location logging on / off. On switching off the
+    log data are written to a logging file (as configured in Settings).</li>
+  <li>The Torch icon switches the torch on / off. Please note the automatic
+    switch-off time, which can be configured in Settings. This function is
+    implemented to protect battery usage and avoid overheating of device.
+    Default is a 30 seconds on time.</li>
+</ul>
+
+<p>In case the torch function is not supported by the device, the torch button
+is not presented and the widget looks like this:</p>
+
+<p><img alt="widget without torch button"
+src="../images/Screenshot_Widget_no_torch_en.png" width="262" height="70" /></p>
+
 <h2 id="L576">Photography Calculations</h2>
 
 <p>A set of screen is available to perform photography calculations, including
 exposure, filter adjustments, depth of field, field of view, circle of
-confusion.</p>
-<a id="EV"></a> 
+confusion. </p>
 
 <h3 id="L581">Exposure (EV)</h3>
 
@@ -297,9 +341,9 @@ If your device is equipped with a <strong>light sensor</strong>, you may use
 this sensor to measure illuminance. Press the Light Sensor button and a dialog
 window is shown. The measured light intensity is shown in lux together with the
 calculated exposure value (EV). Once you accept the measurement, the EV is set
-and become locked. Camera settings are adjusted to reflect the EV. 
+and become locked. Camera settings are adjusted to reflect the EV. <a
+id="Filter"></a> 
 
-<a id="Filter"></a> 
 <h3 id="L586">Filter Stack (FILTER)</h3>
 
 <p>The Filter screen is used to adjust camera settings by the amount of light
@@ -385,8 +429,8 @@ built-in setting for the calculated exposure time. Then set the camera to BULB
 mode and start the timer when you press the shutter release. When the timer
 raises the notification alarm press the camera release to close the shutter.
 </p>
-
 <a id="Dof"></a> 
+
 <h3 id="L591">Depth of Field (DOF)</h3>
 
 <p>This screen allows to calculate the Depth of Field (DoF) for a given
@@ -568,8 +612,8 @@ Use GPS tracking to log your movement path to a file or display on a map. Find
 sun and moon directions with the Ephemeris screen. 
 
 <p>Four screens (tabs) are available: TRACKING, MAP, PLACES, EPHEMERIS.</p>
-
 <a id="tracking"></a> 
+
 <h3 id="L4342">TRACKING Screen</h3>
 
 <p>From the Startup screen press the Tracking icon to reach the tracking
@@ -744,8 +788,8 @@ changes.</p>
 
 <p>The<img alt="time now icon" src="../images/ic_dialog_time.png" width="32"
 height="32" /> icon sets the current date and time.</p>
-
 <a id="places"></a> 
+
 <h3 id="L4469">PLACES Screen</h3>
 
 <p>The PLACES screen is used to load places (<strong><em>Load KML</em>
@@ -1247,6 +1291,7 @@ characteristics.</p>
     <dd>This information is not used for calculation purposes.</dd>
 </dl>
 <a id="LocationList"></a> <a id="LocationDetails"></a> 
+
 <h5 id="L6553">Settings - Location Definitions</h5>
 
 <p>Locations are used for ephemeris calculations and can be defined using
@@ -1365,6 +1410,15 @@ finished.</p>
       this case please use the other notification options.</dd>
 </dl>
 
+<h5 id="L6289">Settings - Torch Auto Switch-Off Time</h5>
+
+<p>This setting allows to configure the automatic switch off time for the
+Torch.</p>
+
+<p>Either select one of the time intervals or choose 'keep on' to disable the
+automatic switch-off. In this case please ensure that you manually switch off
+the torch.</p>
+
 <h4 id="L4499">Settings - Share</h4>
 
 <p>This function allows you to share a link to this application with your
@@ -1404,7 +1458,8 @@ width="295" height="503" /></p>
       from Google Play; this might resolve the alert.</p>
     </dd>
 </dl>
-<a id="purchaseDetails"></a>
+<a id="purchaseDetails"></a> 
+
 <p>Click on the item to view a more detailed description of the feature and the
 purchase price is shown:</p>
 
@@ -1427,7 +1482,8 @@ redirected to Google Play where you are able to perform payment.</p>
 <p><img alt="Purchase details"
 src="../images/Screenshot_purchase_detail_p_en.png" width="295" height="504"
 /></p>
-<a id="rewardEarn"></a><a id="rewardList"></a>
+<a id="rewardEarn"></a><a id="rewardList"></a> 
+
 <h4 id="L4522">Settings - Rewards</h4>
 
 <p>Reward points can be earned by completing surveys and viewing other
@@ -1435,6 +1491,7 @@ advertisement content.</p>
 
 <p>After earning some points you can use them to activate otherwise chargeable
 functionality for a limited time.</p>
+
 <p><img alt="Settings Rewards"
 src="../images/Screenshot_Settings_Rewards_p.png" width="295" height="502"
 /></p>
@@ -1455,7 +1512,8 @@ src="../images/Screenshot_Settings_Rewards_Earn_p.png" width="295" height="503"
 /></p>
 
 <p></p>
-<a id="rewardDetails"></a>
+<a id="rewardDetails"></a> 
+
 <p>Once you have earned some points, redeem them by subscribing to one or more
 additional application functionality. On selection of one of the application
 features available to the rewards system, a Reward Detail screen is shown. This
