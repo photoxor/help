@@ -6,7 +6,7 @@
   <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
   <title>Help</title>
   <style type="text/css">
-  </style>
+ </style>
   <link href="../../style.css" rel="stylesheet" type="text/css" />
 </head>
 
@@ -139,7 +139,7 @@
 
 <h2 id="L4277">Introduction</h2>
 
-<p>This document is for Photoxor C1 version 1.4.8 (50), which can be installed
+<p>This document is for Photoxor C1 version 1.5.0 (56), which can be installed
 or updated for free from <a name="Google" id="Google"
 href="http://play.google.com/store/apps/details?id=com.photoxor.fotoapp">Google
 Play</a>.</p>
@@ -458,15 +458,24 @@ scenario.</p>
 <p><img alt="Screenshot Depth of Field Standard"
 src="../images/Screenshot_dof_p_en.png" width="295" height="503" /></p>
 
-<p>For this calculation you select your camera, aperture, focal length,
+<p>For this calculation you select your camera, lens, aperture, focal length,
 distance and optionally adjust the Circle of Confusion (CoC) value (for
 advanced scenarios use the <a href="#L596">CoC calculation screen</a>). The
 depth of field is then shown with near and far distance values. The hyperfocal
 length is calculated, too.</p>
 
+<p>For a full range of Aperture and Focal Length please select the lens
+"<em>Unrestricted</em>". For other lens selections the Aperture range as well
+as the Focal Length range represent the lens capabilities. In case a camera
+with defined fixed lens is selected, the characteristic of the camera lens is
+used. No other lens can be used in such case.</p>
+
 <p>For focal length and also distance you can either use the (logarithmic)
 sliders to quickly set approximate values or use the entry fields for a precise
 value. Distance values can be shown and entered either in meter or feet.</p>
+
+<p>To set the distance to the <strong>Hyperfocal value</strong>, please just
+press on the Hyperfocal value.</p>
 
 <p>The Circle of Confusion (CoC) is determined from the camera details based on
 the <a href="http://en.wikipedia.org/wiki/Zeiss_formula">Zeiss formula</a>, but
@@ -490,12 +499,17 @@ considered as 'sharp'; lower CoC values indicate higher sharpness.</p>
 
 <p>Press on the graph area to show or hide the legend.</p>
 
-<p>In case you need to define a new <a href="#L3695">camera characteristics</a>
-or amend, press the settings button<img alt="Settings"
-src="../images/ic_action_settings.png" width="48" height="48" /> next to the
-camera. Also go to Settings for a change of the aperture value increment (for
+<p><img alt="Camera icon" src="../images/ic_camera_alt_grey600_24dp.png"
+width="48" height="48" /> Define or amend a <a href="#L3695">camera
+characteristics</a>. </p>
+
+<p><img alt="Lens icon" src="../images/ic_lens_grey_32dp.png" width="48"
+height="48" />Define or amend a lens characteristics.</p>
+
+<p>Also, go to Settings for a change of the aperture value increment (for
 example full stops only or 1/3 stops).</p>
-<a id="DofRange"></a> 
+
+<p><a id="DofRange"></a> </p>
 
 <h3 id="L257">Depth of Field - Near / Far (DOF NEAR/FAR)</h3>
 
@@ -508,6 +522,10 @@ src="../images/Screenshot_dof_nf_p_en.png" width="295" height="503" /></p>
 
 <p>Please note that such calculation works well for 'realistic' values, but
 might fail for more extreme scenarios.</p>
+
+<p><img alt="Camera icon" src="../images/ic_camera_alt_grey600_24dp.png"
+width="48" height="48" /> Define or amend a <a href="#L3695">camera
+characteristics</a>. </p>
 
 <p>The graph is the same as for the standard DoF calculation.</p>
 <a id="CocCalc"></a> 
@@ -533,16 +551,17 @@ scenario where the print resolution is a given factor.</p>
 src="../images/Screenshot_CoC_Calc_p_en.png" width="295" height="561" /></p>
 
 <p>To calculate a CoC value specific to your requirements first select your
-camera. Important is the correct sensor size. Use the <img alt="Settings"
-src="../images/ic_action_settings.png" width="48" height="48" /> icon next to
-the camera selection if you would like to create a new <a href="#L3695">camera
-setting</a> or amend an existing one.</p>
+camera. Important is the correct sensor size. </p>
 
-<p>Next you need to decide on the print size of the planned image. Here as
-well, use the <img alt="Settings" src="../images/ic_action_settings.png"
-width="48" height="48" /> icon next to the print selection if you would like to
-create a new <a href="#L3699">print definition</a> or amend an existing one.
-Most important is the size of the print.</p>
+<p><img alt="Camera icon" src="../images/ic_camera_alt_grey600_24dp.png"
+width="48" height="48" /> Define or amend a <a href="#L3695">camera
+characteristics</a>. </p>
+
+<p>Next you need to decide on the print size of the planned image. Most
+important is the size of the print.</p>
+
+<p><img alt="PrintDef icon" src="../images/icon_printdef.png" width="32"
+height="32" /> Define or amend a <a href="#L3699">print definition</a>.</p>
 
 <p>Usually the calculation is based on the width, but you may alternatively use
 height or diagonal. Depending on you preference, choose your unit of
@@ -596,10 +615,9 @@ can be set in the same way.</p>
 
 <p>Distance values can be entered and shown either in meter or feet.</p>
 
-<p>In case you need to define a new c<a href="#L3695">amera
-characteristics</a>, press the settings button <img alt="Settings"
-src="../images/ic_action_settings.png" width="48" height="48" /> next to the
-camera and add a new one.</p>
+<p><img alt="Camera icon" src="../images/ic_camera_alt_grey600_24dp.png"
+width="48" height="48" /> Define or amend a <a href="#L3695">camera
+characteristics</a>. </p>
 <a id="Flash"></a> 
 
 <h3 id="L12559">Flash</h3>
@@ -614,7 +632,7 @@ width="295" height="504" /></p>
 <p>First select the flash unit and guide number profile, and you get the guide
 number for this configuration. If needed you are able to manually change the
 guide number value. Next choose the output power, film speed (ISO) and
-aperture, and receive the distance.</p>
+aperture, and receive the illumination distance.</p>
 
 <p>You may display distance related values (i.e. distance and guide number) in
 either Meter or Feet.</p>
@@ -622,9 +640,8 @@ either Meter or Feet.</p>
 <p>Please note that without the Flash Pro add-on only one guide number profile
 can be set (exception are the sample flash definitions).</p>
 
-<p>In case you need to define a new flash characteristics, press the settings
-button<img alt="settings button" src="../images/ic_action_settings.png"
-width="48" height="48" /> and add a new flash.</p>
+<p><img alt="Flash icon" src="../images/ic_flash.png" width="32" height="32"
+/>Define a new flash characteristics.</p>
 
 <h2 id="L4334">Tracking and Ephemeris</h2>
 Use GPS tracking to log your movement path to a file or display on a map. Find
@@ -669,17 +686,24 @@ width="295" height="504" /></p>
 
 <p></p>
 
-<p>While Logging is active both audio recordings and photos (taken with device
-camera) can be associated with the current location. You might use this feature
-to quickly record information about a place. For such recordings a marker is
-shown on the map.</p>
+<p>While Logging is active both audio recordings<img alt="Microphone icon"
+src="../images/ic_keyboard_voice_grey600_24dp.png" width="48" height="48" />
+and photos <img alt="Camera icon"
+src="../images/ic_camera_alt_grey600_24dp.png" width="48" height="48" />(taken
+with device camera) can be associated with the current location. You might use
+this feature to quickly record information about a place. For such recordings a
+marker is shown on the map.</p>
+
+<p><img alt="Location icon" src="../images/ic_menu_mylocation.png" width="32"
+height="32" /> Save the current location.</p>
 
 <h4 id="L4396">Audio Recording</h4>
 
-<p>Wile Logging is active you are able to record an audio message. This
-recording is geocoded with the current location. In case the track is presented
-on the map (MAP screen) then a marker icon in shape of a microphone is
-shown.</p>
+<p><img alt="Microphone icon"
+src="../images/ic_keyboard_voice_grey600_24dp.png" width="48" height="48" />
+While Logging is active you are able to record an audio message. This recording
+is geocoded with the current location. In case the track is presented on the
+map (MAP screen) then a marker icon in shape of a microphone is shown.</p>
 
 <p>Within Settings you can change the recording format between 3GP, MPEG4, AMR.
 The recording file is stored in a folder for media files associated with the
@@ -777,8 +801,8 @@ src="../images/Screenshot_Map_p.png" width="295" height="503" /></p>
 
 <h4 id="L741">Map Ephemeris</h4>
 
-<p>The Map screen allows you to visualise the sun and moon directions; a great
-way to plan the best location for your photo shoot.</p>
+<p>The Map screen allows you to visualise sun and moon directions; a great way
+to plan the best location for your photo shoot.</p>
 
 <p><img alt="Map ephemeris details"
 src="../images/Screenshot_Map_ephemeris_p.png" width="295" height="503" /></p>
@@ -787,7 +811,7 @@ src="../images/Screenshot_Map_ephemeris_p.png" width="295" height="503" /></p>
 height="32" /> shows or hides the ephemeris lines.</p>
 
 <p>The icon<img alt="my places icon" src="../images/ic_menu_myplaces.png"
-width="32" height="32" /> show the currently chosen ephemeris location.</p>
+width="32" height="32" /> shows the currently chosen ephemeris location.</p>
 
 <p>The icon<img alt="my location" src="../images/ic_menu_mylocation.png"
 width="32" height="32" /> selects the current GPS location (if available) as
@@ -805,14 +829,16 @@ src="../images/Screenshot_Map_ephemeris_time_p.png" width="295" height="503"
 <p>Use the slider to change the time of day and see how sun and moon direction
 changes.</p>
 
-<p>The<img alt="time now icon" src="../images/ic_dialog_time.png" width="32"
-height="32" /> icon sets the current date and time.</p>
+<p>The<img alt="Time now icon" src="../images/ic_access_time_black_24dp.png"
+width="48" height="48" /> icon sets the current date and time for the
+calculation.</p>
 <a id="places"></a> 
 
 <h3 id="L4469">PLACES Screen</h3>
 
-<p>The PLACES screen is used to load places (<strong><em>Load KML</em>
-</strong>button<strong></strong>) of interest from KML files.</p>
+<p>The PLACES screen is used to load places (<strong><img alt="Load icon"
+src="../images/ic_menu_save.png" width="32" height="32" /></strong>) of
+interest from KML files.</p>
 
 <p><img alt="Tracking - Places Screen" src="../images/Screenshot_Places_p.png"
 width="295" height="505" /></p>
@@ -889,8 +915,9 @@ timezone, except for the graph where the location location timezone is
 applied!</em></p>
 
 <p>Next set the <strong>date and time</strong> for this calculation using the
-buttons. To get the current date / time press <strong><img alt="time now"
-src="../images/ic_dialog_time.png" width="32" height="32" />.</strong></p>
+buttons. To get the current date / time press <strong><img alt="Time now icon"
+src="../images/ic_access_time_black_24dp.png" width="48" height="48"
+/>.</strong></p>
 
 <h4 id="L4345">Graph</h4>
 
@@ -1203,9 +1230,8 @@ width="450" height="340" /></p>
   <dt>Reorder</dt>
     <dd>You might prefer to show the most often used definitions at the
       beginning of the list.</dd>
-    <dd>To rearrange an item, touch the icon<img alt="Icon reorder"
-      src="../images/ic_drag_reorder.png" width="59" height="53" /> on the left
-      side and drag to a new location.</dd>
+    <dd>To rearrange an item, touch the icon on the left side and drag to a new
+      location.</dd>
   <dt>Delete Definition</dt>
     <dd>To delete a definition, touch the line on the right side (outside of
       the gray area) and swipe to the right. The item will disappear from the
@@ -1227,7 +1253,7 @@ width="450" height="340" /></p>
 </dl>
 <a id="CameraList"></a> <a id="CameraDetails"></a> 
 
-<h5 id="L3695">Settings - Cameras</h5>
+<h5 id="L3695">Settings - My Cameras</h5>
 Camera definitions are used for various calculations, such as field of view,
 but also to determine the circle of confusion (CoC) for Depth of Field (DoF)
 calculations. 
@@ -1250,7 +1276,21 @@ calculations.
 </dl>
 <a id="FilterList"></a> <a id="FilterDetails"></a> 
 
-<h5 id="L3697">Settings - Filters</h5>
+<h5>Settings - My Lenses</h5>
+
+<p>Lens definitions are used for Depth of Field (DoF) calculations. </p>
+<dl>
+  <dt>Prime Lens</dt>
+    <dd>Tick for a prime lens; then only one focal length value is set.</dd>
+  <dt>Focal Length Range</dt>
+    <dd>The focal length range of this lens.</dd>
+  <dt>Aperture Range</dt>
+    <dd>The aperture range of this lens.</dd>
+</dl>
+
+<p></p>
+
+<h5 id="L3697">Settings - My Filters</h5>
 Filter definitions are used in exposure calculations to determine the level of
 light reductions. Currently all filters are treated as neutral density (ND)
 filters characterized by the level of light reduction. 
@@ -1263,7 +1303,7 @@ filters characterized by the level of light reduction.
 
 <p><a id="FlashList"></a><a id="FlashDetails"></a> </p>
 
-<h5 id="L13367">Settings - Flashes</h5>
+<h5 id="L13367">Settings - My Flashes</h5>
 
 <p>Flash definitions are used for calculation of their reach of
 illumination.</p>
@@ -1298,7 +1338,7 @@ specific lighting situations.</p>
 </dl>
 <a id="PrintDefsList"></a> <a id="PrintDefDetails"></a> 
 
-<h5 id="L3699">Settings - Print Definitions</h5>
+<h5 id="L3699">Settings - My Print Definitions</h5>
 
 <p>Print definitions are used for the specialized calculation of the circle of
 confusion (CoC) for Depth of Field (DoF) based on both print and camera sensor
@@ -1327,7 +1367,7 @@ characteristics.</p>
 </dl>
 <a id="LocationList"></a> <a id="LocationDetails"></a> 
 
-<h5 id="L6553">Settings - Location Definitions</h5>
+<h5 id="L6553">Settings - My Locations</h5>
 
 <p>Locations are used for ephemeris calculations and can be defined using
 latitude and longitude coordinates.</p>
@@ -1414,7 +1454,7 @@ nanometer.</p>
 <p>This setting provides you with configuration of the application screens.</p>
 
 <p><img alt="Settings Screen" src="../images/Screenshot_Settings_Screen_p.png"
-width="295" height="198" /></p>
+width="295" height="133" /></p>
 
 <p></p>
 
@@ -1479,8 +1519,9 @@ width="295" height="503" /></p>
 
 <p>Symbols indicate the purchase status for each item:</p>
 <dl>
-  <dt><img alt="purchase icon" src="../images/ic_action_purchase.png"
-  width="48" height="48" /></dt>
+  <dt><img alt="Purchase icon"
+  src="../images/ic_add_shopping_cart_grey600_24dp.png" width="48" height="48"
+  /></dt>
     <dd>This symbol indicates that the feature is for purchase.</dd>
   <dt><img alt="Green check tick" src="../images/btn_check_buttonless_on.png"
   width="41" height="72" /></dt>
@@ -1500,7 +1541,7 @@ purchase price is shown:</p>
 
 <p><img alt="Purchase detail"
 src="../images/Screenshot_Settings_Purchases_Detail_notpurchased_p_en.png"
-width="295" height="503" /></p>
+width="295" height="314" /></p>
 
 <p><a id="rewardList">On this screen you can abort the purchase using
 <strong>Cancel</strong>.</a> </p>
@@ -1543,7 +1584,7 @@ remains inactive. As soon as content becomes available the associated button
 will become active.</p>
 
 <p><img alt="Settings Rewards Earn"
-src="../images/Screenshot_Settings_Rewards_Earn_p.png" width="295" height="503"
+src="../images/Screenshot_Settings_Rewards_Earn_p.png" width="295" height="200"
 /></p>
 
 <p></p>
@@ -1588,7 +1629,7 @@ is used; all information is aggregated across the whole user community.</p>
 <p>For Map settings please see below.</p>
 
 <p><img alt="Settings Tracking Screen"
-src="../images/Screenshot_Settings_Tracking_p.png" width="295" height="691"
+src="../images/Screenshot_Settings_Tracking_p.png" width="295" height="504"
 /></p>
 
 <p></p>
@@ -1626,7 +1667,7 @@ left).</p>
 src="../images/Screenshot_Settings_Ephemeris_p_en.png" width="295" height="504"
 /></p>
 
-<h4 id="L6769">Settings - Locations</h4>
+<h4 id="L6769">Settings - My Locations</h4>
 
 <p>For a general guide on using the list please see the general <a
 href="#L20979">guidelines</a>.</p>
