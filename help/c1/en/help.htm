@@ -20,6 +20,7 @@
     <ul>
       <li><a href="#L4323">Icon Arrangement</a></li>
       <li><a href="#L1920">Navigation Drawer</a></li>
+      <li><a href="#L496">Start Screen Configuration</a></li>
     </ul>
   </li>
   <li><a href="#L4883">Application Widget</a>
@@ -81,6 +82,7 @@
           <li><a href="#L3415">Ephemeris Calculations</a></li>
           <li><a href="#L3417">Twilight Data</a></li>
           <li><a href="#L1177">Auto Calculation</a></li>
+          <li><a href="#L1474">Ephemeris Twilight Alarms</a></li>
         </ul>
       </li>
       <li><a href="#L3018">Location Search</a></li>
@@ -91,6 +93,7 @@
       <li><a href="#L1471">Torch</a></li>
     </ul>
   </li>
+  <li><a href="#L1550">Notifications</a></li>
   <li><a href="#L21478">In-App Purchases</a>
     <ul>
       <li><a href="#L21490">No-Advertisement</a></li>
@@ -150,17 +153,22 @@
 
 <h2 id="L4277">Introduction</h2>
 
-<p>This document is for Photoxor C1 version 1.5.1 (57), which can be installed
-or updated for free from <a name="Google" id="Google"
-href="http://play.google.com/store/apps/details?id=com.photoxor.fotoapp">Google
-Play</a>.</p>
+<p>This document is for Photoxor C1 version 1.5.2 (62), which can be installed
+or updated for free from Google Play</p>
+
+<p><a
+href="https://play.google.com/store/apps/details?id=com.photoxor.fotoapp"><img
+alt="Get it on Google Play"
+src="https://developer.android.com/images/brand/en_generic_rgb_wo_45.png" />
+</a></p>
 
 <p>Photoxor C1 is a photography tool for <strong>exposure</strong>,
 <strong>depth of field</strong>, <strong>flash, filter</strong>,
 <strong>CoC</strong> calculations, <strong>GPS location tracking</strong>,
 ephemeris <strong>sun and moon calculations </strong>with
 <strong>compass</strong>. Visualize locations on a map, and quickly see what's
-closest to you.</p>
+closest to you. Create calendar alarms for twilight times, such as Blue or
+Golden Hours.</p>
 
 <p>Use the device camera based <strong>lightmeter</strong> to estimate an
 Exposure Value (EV) reading, determine camera settings and calculate
@@ -260,6 +268,18 @@ src="../images/Screenshot_NavDrawer_p_en.png" width="295" height="502" /></p>
 
 <p>Please note that the Torch function is shown only when supported by your
 device.</p>
+<a id="startScreenFavourites"></a> 
+
+<h3 id="L496">Start Screen Configuration</h3>
+
+<p>For each function the Navigation Drawer has a STAR icon, which allows to
+either place this function on the start screen or hide it. Now you ar able to
+configure you individual start screen.</p>
+
+<p>Don't want to show the start screen at all?</p>
+
+<p>Then on the Navigation Drawer just select exactly one function, and the
+corresponding screen replaces your start screen.</p>
 
 <h2 id="L4883">Application Widget</h2>
 
@@ -1092,6 +1112,42 @@ the battery level is low.</p>
 
 <p><img alt="Autocalc button" src="../images/Screenshot_Autocalc_en.png"
 width="295" height="213" /></p>
+<a id="EphemerisAlarms"></a> 
+
+<h4 id="L1474">Ephemeris Twilight Alarms</h4>
+
+<p>Press the<img alt="Alarm icon" src="../images/ic_alarm_add_grey600_24dp.png"
+width="48" height="48" /> icon, which opens a new screen to set ephemeris
+twilight alarms in your calendar. This screen allows you to change location and
+date as needed.</p>
+
+<p><img alt="Ephemeris Alarm"
+src="../images/Screenshot_ephemeris_alarm_0_selected_p_en.png" width="295"
+height="524" /></p>
+
+<p></p>
+
+<p>Then please select the events you would like to create an alarm for. </p>
+
+<p></p>
+
+<p><img alt="Ephemeris Alarm, 2 selected"
+src="../images/Screenshot_ephemeris_alarm_2_selected_p_en.png" width="295"
+height="524" /></p>
+
+<p>Press 'ADD xx ALARMS'. In case you have installed multiple calendar
+applications, next select the application to be used, and then for each
+selected twilight situation a new calendar event is created and
+prepopulated.</p>
+
+<p>Please note that for some calendar applications only part of the information
+will be populated; this is unfortunately out of our control. Also for each
+ticked alarm a separate event screen will be opened.</p>
+
+<p></p>
+
+<p>After definition of alarms for one date you might choose another date and
+create further alarm entries.</p>
 
 <h3 id="L3018">Location Search</h3>
 
@@ -1153,6 +1209,50 @@ screen, and allows you for example to change the switch-off time.</p>
 
 <p><img alt="torch screen" src="../images/Screenshot_Torch_p_en.png"
 width="295" height="503" /></p>
+<a id="notifications"></a> 
+
+<h2 id="L1550">Notifications</h2>
+
+<p>You may receive notifications from time to time on new application features,
+tips &amp; tricks, and interesting articles. The notification icon changes
+from<img alt="Notification icon"
+src="../images/ic_notifications_none_grey600_24dp.png" width="48" height="48"
+/> to<img alt="New Notifications icon"
+src="../images/ic_notifications_grey600_24dp.png" width="48" height="48" /> as
+an alert that new messages are available.</p>
+
+<p>Notifications are organised in three groups:</p>
+<dl>
+  <dt>CURRENT</dt>
+    <dd>All the newly received notifications, followed by already read
+    ones.</dd>
+  <dt>ARCHIVED</dt>
+    <dd>Keep for future reference.</dd>
+  <dt>DELETED</dt>
+    <dd>Marked for deletion. They will be removed within about 5 days.</dd>
+</dl>
+The following icons are used: 
+<dl>
+  <dt>READ</dt>
+    <dd>Press READ or just click on the notification text to follow an embedded
+      link to further information (if available).</dd>
+</dl>
+<dl>
+  <dt><img alt="Archive icon" src="../images/ic_archive_grey600_24dp.png"
+  width="48" height="48" /></dt>
+    <dd>Archive the notification.</dd>
+  <dt><img alt="Delete icon" src="../images/ic_clear_grey600_24dp.png"
+  width="48" height="48" /></dt>
+    <dd>Delete the notification.</dd>
+  <dt><img alt="Undo icon" src="../images/ic_undo_grey600_24dp.png" width="48"
+  height="48" /></dt>
+    <dd>Undo the deletion of the notification. The notification will be moved
+      to the CURRENT group.</dd>
+</dl>
+
+<p><img alt="Notifications current"
+src="../images/Screenshot_Notifications_ current_p_en.png" width="295"
+height="524" /></p>
 
 <h2 id="L21478">In-App Purchases</h2>
 
